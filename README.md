@@ -23,30 +23,15 @@ More information at [ichiba.io](http://www.ichiba.io) Visit our ANN thread at [B
 
 ### Rewards Breakdown
 
-<table>
-<th>Phase</th><th>Block Height</th><th>Reward</th><th>Masternodes & Stakers</th><th>Budget</th>
-<tr><td>Phase 1</td><td>1-200 </td><td>17,500 ICH</td><td>-</td><td>-</td></tr>
-<tr><td>Phase 2</td><td>302400-345599</td><td>45 ICH</td><td>90% (40.5 ICH)</td><td>10% (4.5 ICH)</td></tr>
-<tr><td>Phase 3</td><td>345600-388799</td><td>40 ICH</td><td>90% (36 ICH)</td><td>10% (4 ICH)</td></tr>
-<tr><td>Phase 4</td><td>388800-431999</td><td>35 ICH</td><td>90% (31.5 ICH)</td><td>10% (3.5 ICH)</td></tr>
-<tr><td>Phase 5</td><td>432000-475199</td><td>30 ICH</td><td>90% (27 ICH)</td><td>10% (3 ICH)</td></tr>
-<tr><td>Phase 6</td><td>475200-518399</td><td>25 ICH</td><td>90% (22.5 ICH)</td><td>10% (2.5 ICH)</td></tr>
-<tr><td>Phase 7</td><td>518400-561599</td><td>20 ICH</td><td>90% (18 ICH)</td><td>10% (2 ICH)</td></tr>
-<tr><td>Phase 8</td><td>561600-604799</td><td>15 ICH</td><td>90% (13.5 ICH)</td><td>10% (1.5 ICH)</td></tr>
-<tr><td>Phase 9</td><td>604800-647999</td><td>10 ICH</td><td>90% (9 ICH)</td><td>10% (1 ICH)</td></tr>
-<tr><td>Phase X</td><td>648000-Infinite</td><td>5 ICH</td><td>90% (4.5 ICH)</td><td>10% (0.5 ICH)</td></tr>
-</table>
-
-
 <TABLE class="t0">
-<TR>
+<th>
 	<TD class="tr0 td0"><P class="p2 ft1">Block</P></TD>
 	<TD class="tr0 td1"><P class="p3 ft1">Block Reward %</P></TD>
 	<TD class="tr0 td2"><P class="p4 ft1">MN Reward %</P></TD>
 	<TD class="tr0 td2"><P class="p3 ft1">Staking Reward %<</P></TD>
 	<TD class="tr0 td2"><P class="p4 ft1">MN Reward </P></TD>
 	<TD class="tr0 td3"><P class="p5 ft1">Staker Reward</P></TD>
-</TR>
+</th>
 
 
 <TR>
