@@ -41,19 +41,13 @@ More information at [ichiba.io](http://www.ichiba.io) Visit our ANN thread at [B
 <TABLE class="t0">
 <TR>
 	<TD class="tr0 td0"><P class="p2 ft1">Block</P></TD>
-	<TD class="tr0 td1"><P class="p3 ft1">Block</P></TD>
-	<TD class="tr0 td2"><P class="p4 ft1">MN Reward</P></TD>
-	<TD class="tr0 td2"><P class="p3 ft1">Staking</P></TD>
-	<TD class="tr0 td2"><P class="p4 ft1">MN Reward</P></TD>
-	<TD class="tr0 td3"><P class="p5 ft1">Staker</P></TD>
+	<TD class="tr0 td1"><P class="p3 ft1">Block Reward %</P></TD>
+	<TD class="tr0 td2"><P class="p4 ft1">MN Reward %</P></TD>
+	<TD class="tr0 td2"><P class="p3 ft1">Staking Reward %<</P></TD>
+	<TD class="tr0 td2"><P class="p4 ft1">MN Reward </P></TD>
+	<TD class="tr0 td3"><P class="p5 ft1">Staker Reward</P></TD>
 </TR>
-<TR>
-	<TD class="tr1 td4"><P class="p6 ft2">&nbsp;</P></TD>
-	<TD class="tr1 td5"><P class="p7 ft3">Reward</P></TD>
-	<TD class="tr1 td6"><P class="p8 ft1">%</P></TD>
-	<TD class="tr1 td6"><P class="p9 ft3">Reward %</P></TD>
-	<TD class="tr1 td7"><P class="p5 ft1">Reward</P></TD>
-</TR>
+
 
 <TR>
 	<TD class="tr3 td4"><P class="p7 ft0"><NOBR>1-200</NOBR></P></TD>
