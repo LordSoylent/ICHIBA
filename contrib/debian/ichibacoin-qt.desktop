@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=IchibaCoin
+Comment=IchibaCoin P2P Cryptocurrency
+Comment[fr]=IchibaCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=IchibaCoin, eşten eşe kriptografik sanal para birimi
+Exec=ichibacoin-qt %u
+Terminal=false
+Type=Application
+Icon=ichibacoin128
+MimeType=x-scheme-handler/ichibacoin;
+Categories=Office;Finance;

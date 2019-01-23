@@ -1,0 +1,36 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/ichibacoin_bg.qm</file>
+        <file alias="ca">locale/ichibacoin_ca.qm</file>
+        <file alias="cs">locale/ichibacoin_cs.qm</file>
+        <file alias="da">locale/ichibacoin_da.qm</file>
+        <file alias="de">locale/ichibacoin_de.qm</file>
+        <file alias="en">locale/ichibacoin_en.qm</file>
+        <file alias="en_US">locale/ichibacoin_en_US.qm</file>
+        <file alias="eo">locale/ichibacoin_eo.qm</file>
+        <file alias="es">locale/ichibacoin_es.qm</file>
+        <file alias="es_ES">locale/ichibacoin_es_ES.qm</file>
+        <file alias="fi">locale/ichibacoin_fi.qm</file>
+        <file alias="fr_FR">locale/ichibacoin_fr_FR.qm</file>
+        <file alias="hi_IN">locale/ichibacoin_hi_IN.qm</file>
+        <file alias="hr">locale/ichibacoin_hr.qm</file>
+        <file alias="hr_HR">locale/ichibacoin_hr_HR.qm</file>
+        <file alias="it">locale/ichibacoin_it.qm</file>
+        <file alias="ja">locale/ichibacoin_ja.qm</file>
+        <file alias="ko_KR">locale/ichibacoin_ko_KR.qm</file>
+        <file alias="lt_LT">locale/ichibacoin_lt_LT.qm</file>
+        <file alias="nl">locale/ichibacoin_nl.qm</file>
+        <file alias="pl">locale/ichibacoin_pl.qm</file>
+        <file alias="pt">locale/ichibacoin_pt.qm</file>
+        <file alias="pt_BR">locale/ichibacoin_pt_BR.qm</file>
+        <file alias="ro_RO">locale/ichibacoin_ro_RO.qm</file>
+        <file alias="ru">locale/ichibacoin_ru.qm</file>
+        <file alias="sk">locale/ichibacoin_sk.qm</file>
+        <file alias="sv">locale/ichibacoin_sv.qm</file>
+        <file alias="tr">locale/ichibacoin_tr.qm</file>
+        <file alias="uk">locale/ichibacoin_uk.qm</file>
+        <file alias="vi">locale/ichibacoin_vi.qm</file>
+        <file alias="zh_CN">locale/ichibacoin_zh_CN.qm</file>
+        <file alias="zh_TW">locale/ichibacoin_zh_TW.qm</file>
+    </qresource>
+</RCC>

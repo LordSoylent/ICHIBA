@@ -1,0 +1,26 @@
+[Unit]
+Description=IchibaCoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=ichibacoin
+Group=ichibacoin
+
+Type=forking
+PIDFile=/var/lib/ichibacoind/ichibacoind.pid
+
+ExecStart=/usr/bin/ichibacoind -daemon -pid=/var/lib/ichibacoind/ichibacoind.pid \
+          -conf=/etc/ichibacoin/ichibacoin.conf -datadir=/var/lib/ichibacoind
+
+ExecStop=-/usr/bin/ichibacoin-cli -conf=/etc/ichibacoin/ichibacoin.conf \
+         -datadir=/var/lib/ichibacoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,26 @@
+# /etc/conf.d/ichibacoind: config file for /etc/init.d/ichibacoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/ichibacoin/ichibacoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/ichibacoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/ichibacoind.pid"
+
+# Where to write ichibacoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/ichibacoind"
+
+# User and group to own ichibacoind process
+#BITCOIND_USER="ichibacoin"
+#BITCOIND_GROUP="ichibacoin"
+
+# Path to ichibacoind executable
+#BITCOIND_BIN="/usr/bin/ichibacoind"
+
+# Nice value to run ichibacoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
