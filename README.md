@@ -38,12 +38,11 @@ More information at [ichiba.io](http://www.ichiba.io) Visit our ANN thread at [B
 </table>
 
 
-<TABLE cellpadding=0 cellspacing=0 class="t0">
+<TABLE class="t0">
 <TR>
 	<TD class="tr0 td0"><P class="p2 ft1">Block</P></TD>
 	<TD class="tr0 td1"><P class="p3 ft1">Block</P></TD>
-	<TD class="tr0 td2"><P class="p4 ft1">MN Reward</P></TD>
-	<TD class="tr0 td2"><P class="p3 ft1">Staking</P></TD>
+
 	<TD class="tr0 td2"><P class="p4 ft1">MN Reward</P></TD>
 	<TD class="tr0 td3"><P class="p5 ft1">Staker</P></TD>
 </TR>
