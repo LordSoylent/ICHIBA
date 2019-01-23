@@ -2,11 +2,11 @@ IchibaCoin integration/staging repository
 =====================================
 
 IchibaCoin is an open source crypto-currency focused on fast private transactions with low transaction fees & environmental footprint.  It utilizes a custom Proof of Stake protocol for securing its network and uses an innovative variable seesaw reward mechanism that dynamically balances 90% of its block reward size between masternodes and staking nodes and 10% dedicated for budget proposals. The goal of IchibaCoin is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
-- Anonymized transactions using the [_Zerocoin Protocol_](http://www.ichibacoin.org/zich).
+- Anonymized transactions using the [_Zerocoin Protocol_].
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
 - Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
 
-More information at [ichiba.io](http://www.ichibacoin.io) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
+More information at [ichiba.io](http://www.ichiba.io) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
 
 ### Coin Specs
 <table>
