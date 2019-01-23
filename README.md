@@ -52,17 +52,9 @@ More information at [ichiba.io](http://www.ichiba.io) Visit our ANN thread at [B
 	<TD class="tr1 td5"><P class="p7 ft3">Reward</P></TD>
 	<TD class="tr1 td6"><P class="p8 ft1">%</P></TD>
 	<TD class="tr1 td6"><P class="p9 ft3">Reward %</P></TD>
-	<TD class="tr1 td6"><P class="p6 ft2">&nbsp;</P></TD>
 	<TD class="tr1 td7"><P class="p5 ft1">Reward</P></TD>
 </TR>
-<TR>
-	<TD class="tr2 td8"><P class="p6 ft4">&nbsp;</P></TD>
-	<TD class="tr2 td9"><P class="p6 ft4">&nbsp;</P></TD>
-	<TD class="tr2 td10"><P class="p6 ft4">&nbsp;</P></TD>
-	<TD class="tr2 td10"><P class="p6 ft4">&nbsp;</P></TD>
-	<TD class="tr2 td10"><P class="p6 ft4">&nbsp;</P></TD>
-	<TD class="tr2 td11"><P class="p6 ft4">&nbsp;</P></TD>
-</TR>
+
 <TR>
 	<TD class="tr3 td4"><P class="p7 ft0"><NOBR>1-200</NOBR></P></TD>
 	<TD class="tr3 td5"><P class="p7 ft0">17,500</P></TD>
@@ -71,14 +63,7 @@ More information at [ichiba.io](http://www.ichiba.io) Visit our ANN thread at [B
 	<TD class="tr3 td6"><P class="p8 ft0">-</P></TD>
 	<TD class="tr3 td7"><P class="p6 ft2">&nbsp;</P></TD>
 </TR>
-<TR>
-	<TD class="tr2 td8"><P class="p6 ft4">&nbsp;</P></TD>
-	<TD class="tr2 td9"><P class="p6 ft4">&nbsp;</P></TD>
-	<TD class="tr2 td10"><P class="p6 ft4">&nbsp;</P></TD>
-	<TD class="tr2 td10"><P class="p6 ft4">&nbsp;</P></TD>
-	<TD class="tr2 td10"><P class="p6 ft4">&nbsp;</P></TD>
-	<TD class="tr2 td11"><P class="p6 ft4">&nbsp;</P></TD>
-</TR>
+
 <TR>
 	<TD class="tr3 td4"><P class="p10 ft0"><NOBR>201-6000</NOBR></P></TD>
 	<TD class="tr3 td5"><P class="p8 ft0">0.1</P></TD>
@@ -1131,12 +1116,7 @@ More information at [ichiba.io](http://www.ichiba.io) Visit our ANN thread at [B
 	<TD class="tr2 td10"><P class="p6 ft4">&nbsp;</P></TD>
 	<TD class="tr2 td11"><P class="p6 ft4">&nbsp;</P></TD>
 </TR>
-</TABLE>
-</DIV>
-<DIV id="page_4">
 
-
-<TABLE cellpadding=0 cellspacing=0 class="t1">
 <TR>
 	<TD class="tr3 td0"><P class="p19 ft0"><NOBR>640001-End</NOBR></P></TD>
 	<TD class="tr3 td1"><P class="p13 ft0">12.5</P></TD>
