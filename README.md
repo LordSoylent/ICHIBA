@@ -6,7 +6,7 @@ IchibaCoin is an open source crypto-currency focused on fast private transaction
 - Anonymized transactions using the [_Zerocoin Protocol_].
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
 
-More information at [ichiba.io](http://www.ichiba.io) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=)
+More information at [ichiba.io](http://www.ichiba.io) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=5101947)
 
 ### Coin Specs
 <table>
