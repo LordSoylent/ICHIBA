@@ -23,7 +23,7 @@ More information at [ichiba.io](http://www.ichiba.io) Visit our ANN thread at [B
 
 RPC Port	2218
 P2P Port	2219
-Explorer	http://209.97.131.20
+Explorer	http://explorer.ichiba.io
 
 
 ### Rewards Breakdown
