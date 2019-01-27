@@ -10,13 +10,13 @@ More information at [ichiba.io](http://www.ichiba.io) Visit our ANN thread at [B
 
 ### Coin Specs
 <table>
-<tr><td>Ticker</td><td>ICH</td></tr>
+<tr><td>Ticker</td><td>ICA</td></tr>
 <tr><td>Algo</td><td>Quark</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
 <tr><td>Max Coin Supply (PoS Phase)</td><td>100 M</td></tr>
-<tr><td>Premine</td><td>3.5M ICH*</td></tr>
-<tr><td>MN Collateral</td><td>5000 ICH*</td></tr>
+<tr><td>Premine</td><td>3.5M ICA*</td></tr>
+<tr><td>MN Collateral</td><td>5000 ICA*</td></tr>
 
 </table>
 
