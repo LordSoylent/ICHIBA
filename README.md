@@ -21,6 +21,11 @@ More information at [ichiba.io](http://www.ichiba.io) Visit our ANN thread at [B
 </table>
 
 
+RPC Port	2218
+P2P Port	2219
+Explorer	http://209.97.131.20
+
+
 ### Rewards Breakdown
 <table border=0 cellpadding=0 cellspacing=0 width=701 class=xl6553517252
  style='border-collapse:collapse;table-layout:fixed;width:528pt'>
