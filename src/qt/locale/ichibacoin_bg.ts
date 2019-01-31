@@ -176,7 +176,7 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>IchibaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ICHs from being stolen by malware infecting your computer.</source>
+        <source>IchibaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ICAs from being stolen by malware infecting your computer.</source>
         <translation>IchibaCoin сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия IchibaCoin от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
@@ -184,8 +184,8 @@
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICH&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ ICH&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICA&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ ICA&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>История на транзакциите</translation>
     </message>
     <message>
-        <source>Privacy Actions for zICH</source>
-        <translation>Поверителни Действия за ZICH</translation>
+        <source>Privacy Actions for zICA</source>
+        <translation>Поверителни Действия за ZICA</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1677,8 +1677,8 @@ Please be patient after clicking import.</source>
         <translation>Адрес / Сума:</translation>
     </message>
     <message>
-        <source>Add destinations to send ICH to</source>
-        <translation>Добави получател на ICH</translation>
+        <source>Add destinations to send ICA to</source>
+        <translation>Добави получател на ICA</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1776,32 +1776,32 @@ Please be patient after clicking import.</source>
         <translation>Изберете ниво на поверителност.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 ICH</source>
-        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 ICH</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 ICA</source>
+        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 ICA</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 ICH</source>
-        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 ICH</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 ICA</source>
+        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 ICA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Използвай 16 различни мастърноуда</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ICH to anonymize 10000 ICH</source>
-        <translation>Това е най-бързия метод и ще струва около 0.025 ICH за да скриете 10000 ICH</translation>
+        <source>This option is the quickest and will cost about ~0.025 ICA to anonymize 10000 ICA</source>
+        <translation>Това е най-бързия метод и ще струва около 0.025 ICA за да скриете 10000 ICA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ICH to anonymize 10000 ICH</source>
-        <translation>Тази опция е сравнително бърза и ще струва около 0.05 ICH за да скриете 10000 ICH</translation>
+        <source>This option is moderately fast and will cost about 0.05 ICA to anonymize 10000 ICA</source>
+        <translation>Тази опция е сравнително бърза и ще струва около 0.05 ICA за да скриете 10000 ICA</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Това е най-бавния и най-сигурен вариант за скриване на ICH. Използването й ще струва</translation>
+        <translation>Това е най-бавния и най-сигурен вариант за скриване на ICA. Използването й ще струва</translation>
     </message>
     <message>
-        <source>0.1 ICH per 10000 ICH you anonymize.</source>
-        <translation>0.1 ICH за 10000 скрити ICH</translation>
+        <source>0.1 ICA per 10000 ICA you anonymize.</source>
+        <translation>0.1 ICA за 10000 скрити ICA</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1944,28 +1944,28 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Картографирай портовете използвайки &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of ICH units to zICH</source>
-        <translation>Включи автоматичното емитиране на ICH единици в zICH</translation>
+        <source>Enable automatic minting of ICA units to zICA</source>
+        <translation>Включи автоматичното емитиране на ICA единици в zICA</translation>
     </message>
     <message>
-        <source>Enable zICH Automint</source>
-        <translation>Включи Автоматично емитиране на zICH</translation>
+        <source>Enable zICA Automint</source>
+        <translation>Включи Автоматично емитиране на zICA</translation>
     </message>
     <message>
-        <source>Percentage of incoming ICH which get automatically converted to zICH via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите ICH, който автоматично да се конвертира в zICH посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming ICA which get automatically converted to zICA via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите ICA, който автоматично да се конвертира в zICA посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zICH</source>
-        <translation>Процент автоматично сечени zICH</translation>
+        <source>Percentage of autominted zICA</source>
+        <translation>Процент автоматично сечени zICA</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough ICH for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zICH докато не се съберат достатъчно ICH за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough ICA for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zICA докато не се съберат достатъчно ICA за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zICH Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zICH</translation>
+        <source>Preferred Automint zICA Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zICA</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2127,8 +2127,8 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Обща Наличност, включително и неналичните монети.</translation>
     </message>
     <message>
-        <source>ICH Balance</source>
-        <translation>ICH Наличности</translation>
+        <source>ICA Balance</source>
+        <translation>ICA Наличности</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2155,14 +2155,14 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Вашите IchibaCoin наличности, включително непотвърдените и неузрели преводи</translation>
     </message>
     <message>
-        <source>zICH Balance</source>
-        <translation>zICH Наличности</translation>
+        <source>zICA Balance</source>
+        <translation>zICA Наличности</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zICH are spendable.</source>
+These zICA are spendable.</source>
         <translation>Узрели: повече от 20 потвърждения и повече от 1 емисии от същата деноминация след като е била емитирана.
-Тези zICH могат да се похарчат.</translation>
+Тези zICA могат да се похарчат.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2215,8 +2215,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Налични за харчене:</translation>
     </message>
     <message>
-        <source>Locked ICH or Masternode collaterals. These are excluded from zICH minting.</source>
-        <translation>Заключен ICH или допълнителни гаранции в Главни Възли. Тези не са включени в zICH емитирането.</translation>
+        <source>Locked ICA or Masternode collaterals. These are excluded from zICA minting.</source>
+        <translation>Заключен ICA или допълнителни гаранции в Главни Възли. Тези не са включени в zICA емитирането.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2227,8 +2227,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Непотвърден</translation>
     </message>
     <message>
-        <source>Your current zICH balance, unconfirmed and immature zICH included.</source>
-        <translation>Вашите zICH наличности, включеително непотвърдените и неузрелите zICH.</translation>
+        <source>Your current zICA balance, unconfirmed and immature zICA included.</source>
+        <translation>Вашите zICA наличности, включеително непотвърдените и неузрелите zICA.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2378,8 +2378,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in ichibacoin
         <translation>0</translation>
     </message>
     <message>
-        <source>zICH</source>
-        <translation>zICH</translation>
+        <source>zICA</source>
+        <translation>zICA</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2390,8 +2390,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in ichibacoin
         <translation>Налични за сечене:</translation>
     </message>
     <message>
-        <source>0.000 000 00 ICH</source>
-        <translation>0.000 000 00 ICH</translation>
+        <source>0.000 000 00 ICA</source>
+        <translation>0.000 000 00 ICA</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2430,16 +2430,16 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in ichibacoin
         <translation>КОНФИДЕНЦИАЛНОСТ</translation>
     </message>
     <message>
-        <source>Enter an amount of Ich to convert to zICH</source>
-        <translation>Въведете колко ICH  да се конвертират в zICH</translation>
+        <source>Enter an amount of Ich to convert to zICA</source>
+        <translation>Въведете колко ICA  да се конвертират в zICA</translation>
     </message>
     <message>
-        <source>zICH Control</source>
-        <translation>zICH Контрол</translation>
+        <source>zICA Control</source>
+        <translation>zICA Контрол</translation>
     </message>
     <message>
-        <source>zICH Selected:</source>
-        <translation>Избрани zICH:</translation>
+        <source>zICA Selected:</source>
+        <translation>Избрани zICA:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2454,24 +2454,24 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in ichibacoin
         <translation>Похарчи Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zICH for spending</source>
-        <translation>Налични (узрели и готови за харчене) zICH за употреба</translation>
+        <source>Available (mature and spendable) zICA for spending</source>
+        <translation>Налични (узрели и готови за харчене) zICA за употреба</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Налични:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zICH for spending
+        <source>Available (mature and spendable) zICA for spending
 
-zICH are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Налични (узрели и готови за харчене) zICH за употреба
+zICA are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Налични (узрели и готови за харчене) zICA за употреба
 
-zICH са узрели, тогава когато имат повече от 20 потвърждения И повече от 2 емисии от същата деноминация след като са биле емитирани</translation>
+zICA са узрели, тогава когато имат повече от 20 потвърждения И повече от 2 емисии от същата деноминация след като са биле емитирани</translation>
     </message>
     <message>
-        <source>0 zICH</source>
-        <translation>0 zICH</translation>
+        <source>0 zICA</source>
+        <translation>0 zICA</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2523,7 +2523,7 @@ zICH са узрели, тогава когато имат повече от 20 
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Изсечи zICH от рестото (ще струва допълнително заради таксите)</translation>
+        <translation>Изсечи zICA от рестото (ще струва допълнително заради таксите)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
@@ -2542,8 +2542,8 @@ zICH са узрели, тогава когато имат повече от 20 
         <translation>Zerocoin статистика:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zICH</source>
-        <translation>Обща Наличност включеително непотвърдените и неузрели zICH</translation>
+        <source>Total Balance including unconfirmed and immature zICA</source>
+        <translation>Обща Наличност включеително непотвърдените и неузрели zICA</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2564,24 +2564,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Неузрели: потвърдени, но с по-малко от 1 емисии от същата деноминация след като са биле емитирани</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zICH minting.
+        <source>Show the current status of automatic zICA minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to ichibacoin.conf
 - disable: add 'enablezeromint=0' to ichibacoin.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zICH
+- menu Settings-&gt;Options-&gt;Percentage of autominted zICA
 
 </source>
-        <translation>Покажи състоянието на автоматичното zICH емитиране.
+        <translation>Покажи състоянието на автоматичното zICA емитиране.
 
 За да пормените състоянието (изисква рестарт):
 - вклчване: добавете 'enablezeromint=1' в ichibacoin.conf
 - изключване: добавете 'enablezeromint=0' в ichibacoin.conf
 
 За промяна в процентите (не изисква рестарт):
-- меню Настройки -&gt; Опции -&gt; Процент на автоемитиран zICH
+- меню Настройки -&gt; Опции -&gt; Процент на автоемитиран zICA
 </translation>
     </message>
     <message>
@@ -2777,12 +2777,12 @@ Maximum allowed: </source>
 Максимум позволени:</translation>
     </message>
     <message>
-        <source>zICH Spend #: </source>
-        <translation>zICH Похарчени #:</translation>
+        <source>zICA Spend #: </source>
+        <translation>zICA Похарчени #:</translation>
     </message>
     <message>
-        <source>zICH Mint</source>
-        <translation>Сечене на zICH</translation>
+        <source>zICA Mint</source>
+        <translation>Сечене на zICA</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2797,12 +2797,12 @@ Maximum allowed: </source>
         <translation>Конфигуриран целеви процент: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zICH is currently disabled due to maintenance.</source>
-        <translation>В момента zICH не работи поради ремонт.</translation>
+        <source>zICA is currently disabled due to maintenance.</source>
+        <translation>В момента zICA не работи поради ремонт.</translation>
     </message>
     <message>
-        <source>zICH is currently undergoing maintenance.</source>
-        <translation>В момента zICH е в ремонт.</translation>
+        <source>zICA is currently undergoing maintenance.</source>
+        <translation>В момента zICA е в ремонт.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2889,8 +2889,8 @@ Maximum allowed: </source>
         <translation>Успешно изсечени</translation>
     </message>
     <message>
-        <source> zICH in </source>
-        <translation>zICH в</translation>
+        <source> zICA in </source>
+        <translation>zICA в</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2949,12 +2949,12 @@ Maximum allowed: </source>
         <translation>Потвърждаване на изпращането</translation>
     </message>
     <message>
-        <source>Version 1 zICH require a security level of 100 to successfully spend.</source>
-        <translation>Версия 1 zICH изисква ниво на сигурност от 100 за успешно изразходване.</translation>
+        <source>Version 1 zICA require a security level of 100 to successfully spend.</source>
+        <translation>Версия 1 zICA изисква ниво на сигурност от 100 за успешно изразходване.</translation>
     </message>
     <message>
-        <source>Failed to spend zICH</source>
-        <translation>Неуспешно изразходване на zICH</translation>
+        <source>Failed to spend zICA</source>
+        <translation>Неуспешно изразходване на zICA</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -2976,7 +2976,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of ICH to convert to zICH</comment>
+        <comment>Enter an amount of ICA to convert to zICA</comment>
         <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3293,8 +3293,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Персонален резервен път:</translation>
     </message>
     <message>
-        <source>Custom zICH Backup Path:</source>
-        <translation>Персонализиран zICH резервен път:</translation>
+        <source>Custom zICA Backup Path:</source>
+        <translation>Персонализиран zICA резервен път:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3737,8 +3737,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Размер на UTXO:</translation>
     </message>
     <message>
-        <source>0 ICH</source>
-        <translation>0 ICH</translation>
+        <source>0 ICA</source>
+        <translation>0 ICA</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3793,12 +3793,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Автоматично избрани монети</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uICHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uICHs in fee,&lt;br /&gt;while "at least" pays 1000 uICHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uICH и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uICH входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uICH. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uICAs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uICAs in fee,&lt;br /&gt;while "at least" pays 1000 uICAs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uICA и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uICA входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uICA. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uICHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uICHs in fee,&lt;br /&gt;while "total at least" pays 1000 uICHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uICH и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uICH входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uICH. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uICAs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uICAs in fee,&lt;br /&gt;while "total at least" pays 1000 uICAs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uICA и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uICA входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uICA. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for IchibaCoin transactions than the network can process.</source>
@@ -3849,8 +3849,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Добави Получател</translation>
     </message>
     <message>
-        <source>Anonymized ICH</source>
-        <translation>Анонимизиран ICH</translation>
+        <source>Anonymized ICA</source>
+        <translation>Анонимизиран ICA</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3898,7 +3898,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Warning: Invalid IchibaCoin address</source>
-        <translation>Предупреждение: Невалиден ICH адрес</translation>
+        <translation>Предупреждение: Невалиден ICA адрес</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4513,12 +4513,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Получен посредством обфускация</translation>
     </message>
     <message>
-        <source>ICH Stake</source>
-        <translation>ICH Stake</translation>
+        <source>ICA Stake</source>
+        <translation>ICA Stake</translation>
     </message>
     <message>
-        <source>zICH Stake</source>
-        <translation>zICH Stake</translation>
+        <source>zICA Stake</source>
+        <translation>zICA Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4537,32 +4537,32 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Обфускация и направа на Деноминации</translation>
     </message>
     <message>
-        <source>Converted ICH to zICH</source>
-        <translation>Конвертиран ICH във zICH</translation>
+        <source>Converted ICA to zICA</source>
+        <translation>Конвертиран ICA във zICA</translation>
     </message>
     <message>
-        <source>Spent zICH</source>
-        <translation>Похарчени zICH</translation>
+        <source>Spent zICA</source>
+        <translation>Похарчени zICA</translation>
     </message>
     <message>
-        <source>Received ICH from zICH</source>
-        <translation>Получен ICH от zICH</translation>
+        <source>Received ICA from zICA</source>
+        <translation>Получен ICA от zICA</translation>
     </message>
     <message>
-        <source>Minted Change as zICH from zICH Spend</source>
-        <translation>Исечено ресто като zICH от похарчените zICH</translation>
+        <source>Minted Change as zICA from zICA Spend</source>
+        <translation>Исечено ресто като zICA от похарчените zICA</translation>
     </message>
     <message>
-        <source>Converted zICH to ICH</source>
-        <translation>Конвертиран zICH във ICH</translation>
+        <source>Converted zICA to ICA</source>
+        <translation>Конвертиран zICA във ICA</translation>
     </message>
     <message>
-        <source>Anonymous (zICH Transaction)</source>
-        <translation>Анонимен (транзакция zICH)</translation>
+        <source>Anonymous (zICA Transaction)</source>
+        <translation>Анонимен (транзакция zICA)</translation>
     </message>
     <message>
-        <source>Anonymous (zICH Stake)</source>
-        <translation>Анонимен (zICH Stake)</translation>
+        <source>Anonymous (zICA Stake)</source>
+        <translation>Анонимен (zICA Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4772,12 +4772,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Експортирането Успешно</translation>
     </message>
     <message>
-        <source>Received ICH from zICH</source>
-        <translation>Получен ICH от zICH</translation>
+        <source>Received ICA from zICA</source>
+        <translation>Получен ICA от zICA</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zICH</source>
-        <translation>Харчене на Zerocoin, Ресто в zICH</translation>
+        <source>Zerocoin Spend, Change in zICA</source>
+        <translation>Харчене на Zerocoin, Ресто в zICA</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4813,8 +4813,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ICH.</source>
-        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 ICH.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ICA.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 ICA.</translation>
     </message>
 </context>
 <context>
@@ -4845,10 +4845,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZIchControlDialog</name>
+    <name>ZIcaControlDialog</name>
     <message>
-        <source>Select zICH to Spend</source>
-        <translation>Изберете zICH за Изпращане</translation>
+        <source>Select zICA to Spend</source>
+        <translation>Изберете zICA за Изпращане</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4859,8 +4859,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>0</translation>
     </message>
     <message>
-        <source>zICH</source>
-        <translation>zICH</translation>
+        <source>zICA</source>
+        <translation>zICA</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4926,12 +4926,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Разпространява се пот MIT софтуерен лиценз, виж съпровождащия файл от &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for ICH inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за ICH входове (0-1, по подразбиране: %u)</translation>
+        <source>Enable or disable staking functionality for ICA inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за ICA входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zICH inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за zICH входове (0-1, по подразбиране: %u)</translation>
+        <source>Enable or disable staking functionality for zICA inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за zICA входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4966,12 +4966,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in ICH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в ICH/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in ICA/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в ICA/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in ICH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в ICH/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in ICA/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в ICA/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5078,12 +5078,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Не намираме достатъчно Обфускационно деноминирани средства за този превод.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 ICH.</source>
-        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 ICH.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 ICA.</source>
+        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 ICA.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 ICH.</source>
-        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 ICH.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 ICA.</source>
+        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 ICA.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5394,8 +5394,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Неуспешно четене на блок</translation>
     </message>
     <message>
-        <source>Fee (in ICH/kB) to add to transactions you send (default: %s)</source>
-        <translation>Такса (в ICH/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
+        <source>Fee (in ICA/kB) to add to transactions you send (default: %s)</source>
+        <translation>Такса (в ICA/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5526,8 +5526,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Процент автоматично емитирани Zerocoin (1-100, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Reindex the ICH and zICH money supply statistics</source>
-        <translation>Индексирай наново ICH и zICH данните по наличности</translation>
+        <source>Reindex the ICA and zICA money supply statistics</source>
+        <translation>Индексирай наново ICA и zICA данните по наличности</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5602,8 +5602,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Предпочитани деноминации за автоматично изсечените Zerocoin (1/5/10/50/100/500/1000/5000), 0 за каквито и да е. (По подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zICH backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране zICH. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
+        <source>Specify custom backup path to add a copy of any automatic zICA backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране zICA. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6102,8 +6102,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Синхронизиране на вилицо-лъжиците...</translation>
     </message>
     <message>
-        <source>Syncing zICH wallet...</source>
-        <translation>Синхронизиране на zICH портфейла ...</translation>
+        <source>Syncing zICA wallet...</source>
+        <translation>Синхронизиране на zICA портфейла ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6250,8 +6250,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Потребителско име за JSON-RPC свръзките</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zICH</source>
-        <translation>Стойността е под най-малката налична деноминация (= 1) в zICH</translation>
+        <source>Value is below the smallest available denomination (= 1) of zICA</source>
+        <translation>Стойността е под най-малката налична деноминация (= 1) в zICA</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
@@ -6266,8 +6266,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Проверява портфейла...</translation>
     </message>
     <message>
-        <source>Version 1 zICH require a security level of 100 to successfully spend.</source>
-        <translation>Версия 1 zICH изисква ниво на сигурност от 100 за успешно изразходване.</translation>
+        <source>Version 1 zICA require a security level of 100 to successfully spend.</source>
+        <translation>Версия 1 zICA изисква ниво на сигурност от 100 за успешно изразходване.</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>

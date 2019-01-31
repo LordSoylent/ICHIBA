@@ -168,16 +168,16 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>IchibaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ICHs from being stolen by malware infecting your computer.</source>
-        <translation>IchibaCoin es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus ICH de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>IchibaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ICAs from being stolen by malware infecting your computer.</source>
+        <translation>IchibaCoin es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus ICA de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICH&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES ICHS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICA&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES ICAS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1148,24 +1148,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 ICH</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 ICH</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 ICA</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 ICA</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 ICH</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 ICH</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 ICA</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 ICA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ICH to anonymize 10000 ICH</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 ICH per anonimitzar 10000 ICH</translation>
+        <source>This option is the quickest and will cost about ~0.025 ICA to anonymize 10000 ICA</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 ICA per anonimitzar 10000 ICA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ICH to anonymize 10000 ICH</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 ICH per anonimitzar 10000 ICH</translation>
+        <source>This option is moderately fast and will cost about 0.05 ICA to anonymize 10000 ICA</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 ICA per anonimitzar 10000 ICA</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1302,12 +1302,12 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zICH</source>
-        <translation>zICH</translation>
+        <source>zICA</source>
+        <translation>zICA</translation>
     </message>
     <message>
-        <source>0.000 000 00 ICH</source>
-        <translation>0.000 000 00 ICH</translation>
+        <source>0.000 000 00 ICA</source>
+        <translation>0.000 000 00 ICA</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1322,8 +1322,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>0 zICH</source>
-        <translation>0 zICH</translation>
+        <source>0 zICA</source>
+        <translation>0 zICA</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1959,7 +1959,7 @@
     </message>
     </context>
 <context>
-    <name>ZIchControlDialog</name>
+    <name>ZIcaControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantitat</translation>
@@ -1969,8 +1969,8 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zICH</source>
-        <translation>zICH</translation>
+        <source>zICA</source>
+        <translation>zICA</translation>
     </message>
     </context>
 <context>

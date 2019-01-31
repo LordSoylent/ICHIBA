@@ -144,8 +144,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICH&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE ICH!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICA&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE ICA!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -2021,7 +2021,7 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations </t
     </message>
     </context>
 <context>
-    <name>ZIchControlDialog</name>
+    <name>ZIcaControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

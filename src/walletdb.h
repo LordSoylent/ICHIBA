@@ -14,7 +14,7 @@
 #include "primitives/zerocoin.h"
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Denominations.h"
-#include "zichtracker.h"
+#include "zicatracker.h"
 
 #include <list>
 #include <stdint.h>
@@ -175,14 +175,14 @@ public:
     bool ReadZerocoinSpendSerialEntry(const CBigNum& bnSerial);
     bool WriteCurrentSeedHash(const uint256& hashSeed);
     bool ReadCurrentSeedHash(uint256& hashSeed);
-    bool WriteZICHSeed(const uint256& hashSeed, const vector<unsigned char>& seed);
-    bool ReadZICHSeed(const uint256& hashSeed, vector<unsigned char>& seed);
-    bool ReadZICHSeed_deprecated(uint256& seed);
-    bool EraseZICHSeed();
-    bool EraseZICHSeed_deprecated();
+    bool WriteZICASeed(const uint256& hashSeed, const vector<unsigned char>& seed);
+    bool ReadZICASeed(const uint256& hashSeed, vector<unsigned char>& seed);
+    bool ReadZICASeed_deprecated(uint256& seed);
+    bool EraseZICASeed();
+    bool EraseZICASeed_deprecated();
 
-    bool WriteZICHCount(const uint32_t& nCount);
-    bool ReadZICHCount(uint32_t& nCount);
+    bool WriteZICACount(const uint32_t& nCount);
+    bool ReadZICACount(uint32_t& nCount);
     std::map<uint256, std::vector<pair<uint256, uint32_t> > > MapMintPool();
     bool WriteMintPoolPair(const uint256& hashMasterSeed, const uint256& hashPubcoin, const uint32_t& nCount);
 

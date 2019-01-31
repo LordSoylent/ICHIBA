@@ -35,7 +35,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::ICH)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::ICA)
     {
     }
 
@@ -147,7 +147,7 @@ OverviewPage::~OverviewPage()
     delete ui;
 }
 
-void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sICHPercentage, QString& szICHPercentage)
+void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sICAPercentage, QString& szICAPercentage)
 {
     int nPrecision = 2;
     double dzPercentage = 0.0;
@@ -166,8 +166,8 @@ void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBala
 
     double dPercentage = 100.0 - dzPercentage;
 
-    szICHPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
-    sICHPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
+    szICAPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
+    sICAPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
 
 }
 
@@ -192,16 +192,16 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
 
-    // ICH Balance
+    // ICA Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
     CAmount ichAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
 
-    // ICH Watch-Only Balance
+    // ICA Watch-Only Balance
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
     CAmount nAvailableWatchBalance = watchOnlyBalance - watchImmatureBalance - nWatchOnlyLockedBalance;
 
-    // zICH Balance
+    // zICA Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
 
     // Percentages
@@ -212,7 +212,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount availableTotalBalance = ichAvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
-    // ICH labels
+    // ICA labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, ichAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
@@ -226,7 +226,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nWatchOnlyLockedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
-    // zICH labels
+    // zICA labels
     ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedZerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceMature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, matureZerocoinBalance, false, BitcoinUnits::separatorAlways));
@@ -237,11 +237,11 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
 
     // Percentage labels
-    ui->labelICHPercent->setText(sPercentage);
-    ui->labelzICHPercent->setText(szPercentage);
+    ui->labelICAPercent->setText(sPercentage);
+    ui->labelzICAPercent->setText(szPercentage);
 
     // Adjust bubble-help according to AutoMint settings
-    QString automintHelp = tr("Current percentage of zICH.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
+    QString automintHelp = tr("Current percentage of zICA.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
     bool fEnableZeromint = false; //GetBoolArg("-enablezeromint", true);
     int nZeromintPercentage = GetArg("-zeromintpercentage", 10);
     if (fEnableZeromint) {
@@ -262,49 +262,49 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     bool showWatchOnly = nTotalWatchBalance != 0;
 
-    // ICH Available
-    bool showICHAvailable = settingShowAllBalances || ichAvailableBalance != nTotalBalance;
-    bool showWatchOnlyICHAvailable = showICHAvailable || nAvailableWatchBalance != nTotalWatchBalance;
-    ui->labelBalanceText->setVisible(showICHAvailable || showWatchOnlyICHAvailable);
-    ui->labelBalance->setVisible(showICHAvailable || showWatchOnlyICHAvailable);
-    ui->labelWatchAvailable->setVisible(showWatchOnlyICHAvailable && showWatchOnly);
+    // ICA Available
+    bool showICAAvailable = settingShowAllBalances || ichAvailableBalance != nTotalBalance;
+    bool showWatchOnlyICAAvailable = showICAAvailable || nAvailableWatchBalance != nTotalWatchBalance;
+    ui->labelBalanceText->setVisible(showICAAvailable || showWatchOnlyICAAvailable);
+    ui->labelBalance->setVisible(showICAAvailable || showWatchOnlyICAAvailable);
+    ui->labelWatchAvailable->setVisible(showWatchOnlyICAAvailable && showWatchOnly);
 
-    // ICH Pending
-    bool showICHPending = settingShowAllBalances || unconfirmedBalance != 0;
-    bool showWatchOnlyICHPending = showICHPending || watchUnconfBalance != 0;
-    ui->labelPendingText->setVisible(showICHPending || showWatchOnlyICHPending);
-    ui->labelUnconfirmed->setVisible(showICHPending || showWatchOnlyICHPending);
-    ui->labelWatchPending->setVisible(showWatchOnlyICHPending && showWatchOnly);
+    // ICA Pending
+    bool showICAPending = settingShowAllBalances || unconfirmedBalance != 0;
+    bool showWatchOnlyICAPending = showICAPending || watchUnconfBalance != 0;
+    ui->labelPendingText->setVisible(showICAPending || showWatchOnlyICAPending);
+    ui->labelUnconfirmed->setVisible(showICAPending || showWatchOnlyICAPending);
+    ui->labelWatchPending->setVisible(showWatchOnlyICAPending && showWatchOnly);
 
-    // ICH Immature
-    bool showICHImmature = settingShowAllBalances || immatureBalance != 0;
-    bool showWatchOnlyImmature = showICHImmature || watchImmatureBalance != 0;
-    ui->labelImmatureText->setVisible(showICHImmature || showWatchOnlyImmature);
-    ui->labelImmature->setVisible(showICHImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
+    // ICA Immature
+    bool showICAImmature = settingShowAllBalances || immatureBalance != 0;
+    bool showWatchOnlyImmature = showICAImmature || watchImmatureBalance != 0;
+    ui->labelImmatureText->setVisible(showICAImmature || showWatchOnlyImmature);
+    ui->labelImmature->setVisible(showICAImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelWatchImmature->setVisible(showWatchOnlyImmature && showWatchOnly); // show watch-only immature balance
 
-    // ICH Locked
-    bool showICHLocked = settingShowAllBalances || nLockedBalance != 0;
-    bool showWatchOnlyICHLocked = showICHLocked || nWatchOnlyLockedBalance != 0;
-    ui->labelLockedBalanceText->setVisible(showICHLocked || showWatchOnlyICHLocked);
-    ui->labelLockedBalance->setVisible(showICHLocked || showWatchOnlyICHLocked);
-    ui->labelWatchLocked->setVisible(showWatchOnlyICHLocked && showWatchOnly);
+    // ICA Locked
+    bool showICALocked = settingShowAllBalances || nLockedBalance != 0;
+    bool showWatchOnlyICALocked = showICALocked || nWatchOnlyLockedBalance != 0;
+    ui->labelLockedBalanceText->setVisible(showICALocked || showWatchOnlyICALocked);
+    ui->labelLockedBalance->setVisible(showICALocked || showWatchOnlyICALocked);
+    ui->labelWatchLocked->setVisible(showWatchOnlyICALocked && showWatchOnly);
 
-    // zICH
-    bool showzICHAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
-    bool showzICHUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
-    bool showzICHImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
-    ui->labelzBalanceMature->setVisible(showzICHAvailable);
-    ui->labelzBalanceMatureText->setVisible(showzICHAvailable);
-    ui->labelzBalanceUnconfirmed->setVisible(showzICHUnconfirmed);
-    ui->labelzBalanceUnconfirmedText->setVisible(showzICHUnconfirmed);
-    ui->labelzBalanceImmature->setVisible(showzICHImmature);
-    ui->labelzBalanceImmatureText->setVisible(showzICHImmature);
+    // zICA
+    bool showzICAAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
+    bool showzICAUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
+    bool showzICAImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
+    ui->labelzBalanceMature->setVisible(showzICAAvailable);
+    ui->labelzBalanceMatureText->setVisible(showzICAAvailable);
+    ui->labelzBalanceUnconfirmed->setVisible(showzICAUnconfirmed);
+    ui->labelzBalanceUnconfirmedText->setVisible(showzICAUnconfirmed);
+    ui->labelzBalanceImmature->setVisible(showzICAImmature);
+    ui->labelzBalanceImmatureText->setVisible(showzICAImmature);
 
     // Percent split
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
-    ui->labelICHPercent->setVisible(showPercentages);
-    ui->labelzICHPercent->setVisible(showPercentages);
+    ui->labelICAPercent->setVisible(showPercentages);
+    ui->labelzICAPercent->setVisible(showPercentages);
 
     static int cachedTxLocks = 0;
 
@@ -375,7 +375,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("ICH")
+    // update the display unit, to not use the default ("ICA")
     updateDisplayUnit();
 }
 

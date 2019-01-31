@@ -269,7 +269,7 @@
     </message>
     </context>
 <context>
-    <name>ZIchControlDialog</name>
+    <name>ZIcaControlDialog</name>
     </context>
 <context>
     <name>ichibacoin-core</name>

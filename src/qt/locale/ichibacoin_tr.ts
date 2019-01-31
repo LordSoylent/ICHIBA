@@ -176,15 +176,15 @@
         <translation>cüzdan şifrelemesini onayla</translation>
     </message>
     <message>
-        <source>IchibaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ICHs from being stolen by malware infecting your computer.</source>
-        <translation>IchibaCoin şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, ICH'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>IchibaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ICAs from being stolen by malware infecting your computer.</source>
+        <translation>IchibaCoin şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, ICA'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICH&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICA&lt;/b&gt;!</source>
         <translation>Dikkat! Eğer cüzdanınızı şifrelerseniz ve şifrenizi unutursanız &lt;b&gt;Tüm Pıvlerinizi kaybedersiniz&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -433,8 +433,8 @@
         <translation>İşlem geçmişini ara</translation>
     </message>
     <message>
-        <source>Privacy Actions for zICH</source>
-        <translation>Gizlilik Aksiyonları zICH</translation>
+        <source>Privacy Actions for zICA</source>
+        <translation>Gizlilik Aksiyonları zICA</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1644,8 +1644,8 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Address /miktar:</translation>
     </message>
     <message>
-        <source>Add destinations to send ICH to</source>
-        <translation>ICH göndermek için varış yerleri ekleyin</translation>
+        <source>Add destinations to send ICA to</source>
+        <translation>ICA göndermek için varış yerleri ekleyin</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1743,32 +1743,32 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Lütfen bir gizlilik düzeyi seçin.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 ICH</source>
-        <translation>10000 ICH'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 ICA</source>
+        <translation>10000 ICA'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 ICH</source>
-        <translation>10000 ICH'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 ICA</source>
+        <translation>10000 ICA'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 ayrı matternod kullan</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ICH to anonymize 10000 ICH</source>
-        <translation>Bu seçenek en hızlıdır ve 10000 ICH'yi anonimleştirmek için ~ 0.025 ICH'lik bir maliyeti olacaktır</translation>
+        <source>This option is the quickest and will cost about ~0.025 ICA to anonymize 10000 ICA</source>
+        <translation>Bu seçenek en hızlıdır ve 10000 ICA'yi anonimleştirmek için ~ 0.025 ICA'lik bir maliyeti olacaktır</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ICH to anonymize 10000 ICH</source>
-        <translation>Bu seçenek orta derecede hızlıdır ve 10000 ICH'yi anonimleştirmek için yaklaşık 0.05 ICH'e mal olur</translation>
+        <source>This option is moderately fast and will cost about 0.05 ICA to anonymize 10000 ICA</source>
+        <translation>Bu seçenek orta derecede hızlıdır ve 10000 ICA'yi anonimleştirmek için yaklaşık 0.05 ICA'e mal olur</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Bu en yavaş ve en güvenli seçenektir. Maksimum anonimlik kullanmak maliyete gelecek</translation>
     </message>
     <message>
-        <source>0.1 ICH per 10000 ICH you anonymize.</source>
-        <translation>0.1 ICH her 10000 ICH anonimleştirmeye.</translation>
+        <source>0.1 ICA per 10000 ICA you anonymize.</source>
+        <translation>0.1 ICA her 10000 ICA anonimleştirmeye.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1911,24 +1911,24 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable zICH Automint</source>
-        <translation>zICH Otomatik basımı etkinleştir</translation>
+        <source>Enable zICA Automint</source>
+        <translation>zICA Otomatik basımı etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming ICH which get automatically converted to zICH via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zICH'ye dönüştürülen gelen ICH yüzdesi (dakika: 10%)</translation>
+        <source>Percentage of incoming ICA which get automatically converted to zICA via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak zICA'ye dönüştürülen gelen ICA yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zICH</source>
-        <translation>Otomatikleştirilmiş zICH yüzdesi</translation>
+        <source>Percentage of autominted zICA</source>
+        <translation>Otomatikleştirilmiş zICA yüzdesi</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough ICH for this denomination is available</source>
-        <translation>Bu mezhebi için yeterli ICH bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough ICA for this denomination is available</source>
+        <translation>Bu mezhebi için yeterli ICA bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
     </message>
     <message>
-        <source>Preferred Automint zICH Denomination</source>
-        <translation>Tercih edilen Automint zICH Nominal değeri</translation>
+        <source>Preferred Automint zICA Denomination</source>
+        <translation>Tercih edilen Automint zICA Nominal değeri</translation>
     </message>
     <message>
         <source>Connect to the IchibaCoin network through a SOCKS5 proxy.</source>
@@ -2078,8 +2078,8 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Toplam Bakiye, mevcut olmayan tüm paralar dahil.</translation>
     </message>
     <message>
-        <source>ICH Balance</source>
-        <translation>ICH Bakiyesi</translation>
+        <source>ICA Balance</source>
+        <translation>ICA Bakiyesi</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2102,8 +2102,8 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Güncel IchibaCoin bakiyeniz, onaylanmamış ve olgunlaşmamış işlemler dahil</translation>
     </message>
     <message>
-        <source>zICH Balance</source>
-        <translation>zICH Bakiyesi</translation>
+        <source>zICA Balance</source>
+        <translation>zICA Bakiyesi</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the IchibaCoin network after a connection is established, but this process has not completed yet.</source>
@@ -2150,8 +2150,8 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Harcanabilir:</translation>
     </message>
     <message>
-        <source>Locked ICH or Masternode collaterals. These are excluded from zICH minting.</source>
-        <translation>Kilitli ICH veya Masternode teminatları. Bunlar zICH matlaştırmadan çıkarılır.</translation>
+        <source>Locked ICA or Masternode collaterals. These are excluded from zICA minting.</source>
+        <translation>Kilitli ICA veya Masternode teminatları. Bunlar zICA matlaştırmadan çıkarılır.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2162,8 +2162,8 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>onaylanmamış:</translation>
     </message>
     <message>
-        <source>Your current zICH balance, unconfirmed and immature zICH included.</source>
-        <translation>Güncel zICH bakiyeniz, onaylanmamış ve olgunlaşmamış zICH'ler dahil.</translation>
+        <source>Your current zICA balance, unconfirmed and immature zICA included.</source>
+        <translation>Güncel zICA bakiyeniz, onaylanmamış ve olgunlaşmamış zICA'ler dahil.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2174,10 +2174,10 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>senkronizasyon dışı</translation>
     </message>
     <message>
-        <source>Current percentage of zICH.
+        <source>Current percentage of zICA.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Mevcut zICH yüzdesi.
+        <translation>Mevcut zICA yüzdesi.
 AutoMint etkinleştirilirse, bu yüzde, yapılandırılmış AutoMint yüzdesi etrafında düzelir (varsayılan = 10%).
 </translation>
     </message>
@@ -2321,8 +2321,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in ichibacoin
         <translation>0</translation>
     </message>
     <message>
-        <source>zICH</source>
-        <translation>zICH</translation>
+        <source>zICA</source>
+        <translation>zICA</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2333,8 +2333,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in ichibacoin
         <translation>Mintinge hazır</translation>
     </message>
     <message>
-        <source>0.000 000 00 ICH</source>
-        <translation>0.000 000 00 ICH</translation>
+        <source>0.000 000 00 ICA</source>
+        <translation>0.000 000 00 ICA</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2385,24 +2385,24 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in ichibacoin
         <translation>Harca Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zICH for spending</source>
-        <translation>Mevcut (olgun ve harcanabilir) harcama için zICH</translation>
+        <source>Available (mature and spendable) zICA for spending</source>
+        <translation>Mevcut (olgun ve harcanabilir) harcama için zICA</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Kullanılabilir Bakiye:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zICH for spending
+        <source>Available (mature and spendable) zICA for spending
 
-zICH are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Mevcut (olgun ve harcanabilir) harcama için zICH
+zICA are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Mevcut (olgun ve harcanabilir) harcama için zICA
 
-zICH, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhepten 2 kat fazla darphane çekilir.</translation>
+zICA, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhepten 2 kat fazla darphane çekilir.</translation>
     </message>
     <message>
-        <source>0 zICH</source>
-        <translation>0 zICH</translation>
+        <source>0 zICA</source>
+        <translation>0 zICA</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2473,8 +2473,8 @@ zICH, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhep
         <translation>Zerocoin durumu:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zICH</source>
-        <translation>Doğrulanmamış ve olgunlaşmamış zICH dahil toplam bakiye</translation>
+        <source>Total Balance including unconfirmed and immature zICA</source>
+        <translation>Doğrulanmamış ve olgunlaşmamış zICA dahil toplam bakiye</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2649,12 +2649,12 @@ Maximum allowed: </source>
 Maksimum bırakılan: </translation>
     </message>
     <message>
-        <source>zICH is currently disabled due to maintenance.</source>
-        <translation>zICH bakım nedeniyle şu an kullanıma kapalı.</translation>
+        <source>zICA is currently disabled due to maintenance.</source>
+        <translation>zICA bakım nedeniyle şu an kullanıma kapalı.</translation>
     </message>
     <message>
-        <source>zICH is currently undergoing maintenance.</source>
-        <translation>zICH halen bakım alıyor.</translation>
+        <source>zICA is currently undergoing maintenance.</source>
+        <translation>zICA halen bakım alıyor.</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
@@ -2677,8 +2677,8 @@ Maksimum bırakılan: </translation>
         <translation>Başarılı şekilde mint edildi</translation>
     </message>
     <message>
-        <source> zICH in </source>
-        <translation> zICH in </translation>
+        <source> zICA in </source>
+        <translation> zICA in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -3428,8 +3428,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>UTXO Boyutu:</translation>
     </message>
     <message>
-        <source>0 ICH</source>
-        <translation>0 ICH</translation>
+        <source>0 ICA</source>
+        <translation>0 ICA</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3484,12 +3484,12 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Koinler otomatik seçildi</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uICHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uICHs in fee,&lt;br /&gt;while "at least" pays 1000 uICHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uICH olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uICH öder,&lt;br /&gt;"en az" ise 1000 uICH öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uICAs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uICAs in fee,&lt;br /&gt;while "at least" pays 1000 uICAs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 uICA olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uICA öder,&lt;br /&gt;"en az" ise 1000 uICA öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uICHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uICHs in fee,&lt;br /&gt;while "total at least" pays 1000 uICHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uICH olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uICH ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 uICH ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uICAs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uICAs in fee,&lt;br /&gt;while "total at least" pays 1000 uICAs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 uICA olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uICA ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 uICA ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for IchibaCoin transactions than the network can process.</source>
@@ -3540,8 +3540,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Alıcı ekle</translation>
     </message>
     <message>
-        <source>Anonymized ICH</source>
-        <translation>anonim edilmiş ICH</translation>
+        <source>Anonymized ICA</source>
+        <translation>anonim edilmiş ICA</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4436,8 +4436,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Koinleri göder</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ICH.</source>
-        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 ICH ile sınırlıdır.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ICA.</source>
+        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 ICA ile sınırlıdır.</translation>
     </message>
 </context>
 <context>
@@ -4464,7 +4464,7 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     </message>
 </context>
 <context>
-    <name>ZIchControlDialog</name>
+    <name>ZIcaControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Adet</translation>
@@ -4474,8 +4474,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>0</translation>
     </message>
     <message>
-        <source>zICH</source>
-        <translation>zICH</translation>
+        <source>zICA</source>
+        <translation>zICA</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4565,12 +4565,12 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
     </message>
     <message>
-        <source>Fees (in ICH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (ICH / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in ICA/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (ICA / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in ICH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (ICH / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in ICA/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (ICA / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

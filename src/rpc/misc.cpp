@@ -65,17 +65,17 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "  \"difficulty\": xxxxxx,       (numeric) the current difficulty\n"
             "  \"testnet\": true|false,      (boolean) if the server is using testnet or not\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zICHsupply\" :\n"
+            "  \"zICAsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zICH denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zICH denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zICH denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zICH denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zICH denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zICH denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zICH denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zICH denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zICH denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zICA denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zICA denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zICA denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zICA denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zICA denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zICA denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zICA denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zICA denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zICA denominations\n"
             "  }\n"
             "  \"keypoololdest\": xxxxxx,    (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,        (numeric) how many new keys are pre-generated\n"
@@ -122,12 +122,12 @@ UniValue getinfo(const UniValue& params, bool fHelp)
     }
 
     obj.push_back(Pair("moneysupply",ValueFromAmount(chainActive.Tip()->nMoneySupply)));
-    UniValue zichObj(UniValue::VOBJ);
+    UniValue zicaObj(UniValue::VOBJ);
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        zichObj.push_back(Pair(to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom*COIN))));
+        zicaObj.push_back(Pair(to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
-    zichObj.push_back(Pair("total", ValueFromAmount(chainActive.Tip()->GetZerocoinSupply())));
-    obj.push_back(Pair("zICHsupply", zichObj));
+    zicaObj.push_back(Pair("total", ValueFromAmount(chainActive.Tip()->GetZerocoinSupply())));
+    obj.push_back(Pair("zICAsupply", zicaObj));
 
 #ifdef ENABLE_WALLET
     if (pwalletMain) {

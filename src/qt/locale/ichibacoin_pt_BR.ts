@@ -176,16 +176,16 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>IchibaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ICHs from being stolen by malware infecting your computer.</source>
-        <translation>IchibaCoin vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas ICHs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>IchibaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ICAs from being stolen by malware infecting your computer.</source>
+        <translation>IchibaCoin vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas ICAs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICH&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS ICH&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICA&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS ICA&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -409,8 +409,8 @@
         <translation>Olhar histórico de transação</translation>
     </message>
     <message>
-        <source>Privacy Actions for zICH</source>
-        <translation>Ações privadas para zICH</translation>
+        <source>Privacy Actions for zICA</source>
+        <translation>Ações privadas para zICA</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1574,32 +1574,32 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Favor selecionar o nível de privacidade.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 ICH</source>
-        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 ICH</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 ICA</source>
+        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 ICA</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 ICH</source>
-        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 ICH</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 ICA</source>
+        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 ICA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 masternodes separados</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ICH to anonymize 10000 ICH</source>
-        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 ICH para anonimizar 10000 ICH</translation>
+        <source>This option is the quickest and will cost about ~0.025 ICA to anonymize 10000 ICA</source>
+        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 ICA para anonimizar 10000 ICA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ICH to anonymize 10000 ICH</source>
-        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 ICH para anonimizar 10000 ICH</translation>
+        <source>This option is moderately fast and will cost about 0.05 ICA to anonymize 10000 ICA</source>
+        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 ICA para anonimizar 10000 ICA</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta é a opção mais lenta e mais segura. Usando a anonimização máxima vai custar</translation>
     </message>
     <message>
-        <source>0.1 ICH per 10000 ICH you anonymize.</source>
-        <translation>0.1 ICH por 10000 ICH que deixar anônima.</translation>
+        <source>0.1 ICA per 10000 ICA you anonymize.</source>
+        <translation>0.1 ICA por 10000 ICA que deixar anônima.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1958,12 +1958,12 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>0</translation>
     </message>
     <message>
-        <source>zICH</source>
-        <translation>zICH</translation>
+        <source>zICA</source>
+        <translation>zICA</translation>
     </message>
     <message>
-        <source>0.000 000 00 ICH</source>
-        <translation>0.000 000 00 ICH</translation>
+        <source>0.000 000 00 ICA</source>
+        <translation>0.000 000 00 ICA</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -2038,8 +2038,8 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Estatísticas zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zICH</source>
-        <translation>Balanço Total incluindo não confirmadas e imaturas zICH</translation>
+        <source>Total Balance including unconfirmed and immature zICA</source>
+        <translation>Balanço Total incluindo não confirmadas e imaturas zICA</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2687,8 +2687,8 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Tamanho UTXO:</translation>
     </message>
     <message>
-        <source>0 ICH</source>
-        <translation>0 ICH</translation>
+        <source>0 ICA</source>
+        <translation>0 ICA</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2731,8 +2731,8 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Tempo de confirmação:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uICHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uICHs in fee,&lt;br /&gt;while "at least" pays 1000 uICHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Se a taxa padrão estiver definida para 1000 uICHs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uICHs em taxa,&lt;br /&gt; pagará pelo menos 1000 uICHs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uICAs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uICAs in fee,&lt;br /&gt;while "at least" pays 1000 uICAs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se a taxa padrão estiver definida para 1000 uICAs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uICAs em taxa,&lt;br /&gt; pagará pelo menos 1000 uICAs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for IchibaCoin transactions than the network can process.</source>
@@ -2783,8 +2783,8 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Adicionar &amp;Recipiente</translation>
     </message>
     <message>
-        <source>Anonymized ICH</source>
-        <translation>ICH anonimizadas</translation>
+        <source>Anonymized ICA</source>
+        <translation>ICA anonimizadas</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3635,7 +3635,7 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
     </message>
 </context>
 <context>
-    <name>ZIchControlDialog</name>
+    <name>ZIcaControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantia</translation>
@@ -3645,8 +3645,8 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>0</translation>
     </message>
     <message>
-        <source>zICH</source>
-        <translation>zICH</translation>
+        <source>zICA</source>
+        <translation>zICA</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -3672,12 +3672,12 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in ICH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em ICH/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in ICA/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em ICA/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in ICH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em ICH/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in ICA/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em ICA/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3696,8 +3696,8 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Define o tamanho máximo de transações de alta prioridade/taxa baixa em bytes (padrão: %d)</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 ICH.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 ICH.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 ICA.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 ICA.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3896,8 +3896,8 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in ICH/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em ICH/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in ICA/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em ICA/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>

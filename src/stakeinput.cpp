@@ -9,7 +9,7 @@
 #include "stakeinput.h"
 #include "wallet.h"
 
-CZIchStake::CZIchStake(const libzerocoin::CoinSpend& spend)
+CZIcaStake::CZIcaStake(const libzerocoin::CoinSpend& spend)
 {
     this->nChecksum = spend.getAccumulatorChecksum();
     this->denom = spend.getDenomination();
@@ -19,7 +19,7 @@ CZIchStake::CZIchStake(const libzerocoin::CoinSpend& spend)
     fMint = false;
 }
 
-int CZIchStake::GetChecksumHeightFromMint()
+int CZIcaStake::GetChecksumHeightFromMint()
 {
     int nHeightChecksum = chainActive.Height() - Params().Zerocoin_RequiredStakeDepth();
 
@@ -30,20 +30,20 @@ int CZIchStake::GetChecksumHeightFromMint()
     return GetChecksumHeight(nChecksum, denom);
 }
 
-int CZIchStake::GetChecksumHeightFromSpend()
+int CZIcaStake::GetChecksumHeightFromSpend()
 {
     return GetChecksumHeight(nChecksum, denom);
 }
 
-uint32_t CZIchStake::GetChecksum()
+uint32_t CZIcaStake::GetChecksum()
 {
     return nChecksum;
 }
 
-// The zICH block index is the first appearance of the accumulator checksum that was used in the spend
+// The zICA block index is the first appearance of the accumulator checksum that was used in the spend
 // note that this also means when staking that this checksum should be from a block that is beyond 60 minutes old and
 // 100 blocks deep.
-CBlockIndex* CZIchStake::GetIndexFrom()
+CBlockIndex* CZIcaStake::GetIndexFrom()
 {
     if (pindexFrom)
         return pindexFrom;
@@ -65,13 +65,13 @@ CBlockIndex* CZIchStake::GetIndexFrom()
     return pindexFrom;
 }
 
-CAmount CZIchStake::GetValue()
+CAmount CZIcaStake::GetValue()
 {
     return denom * COIN;
 }
 
 //Use the first accumulator checkpoint that occurs 60 minutes after the block being staked from
-bool CZIchStake::GetModifier(uint64_t& nStakeModifier)
+bool CZIcaStake::GetModifier(uint64_t& nStakeModifier)
 {
     CBlockIndex* pindex = GetIndexFrom();
     if (!pindex)
@@ -91,15 +91,15 @@ bool CZIchStake::GetModifier(uint64_t& nStakeModifier)
     }
 }
 
-CDataStream CZIchStake::GetUniqueness()
+CDataStream CZIcaStake::GetUniqueness()
 {
-    //The unique identifier for a zICH is a hash of the serial
+    //The unique identifier for a zICA is a hash of the serial
     CDataStream ss(SER_GETHASH, 0);
     ss << hashSerial;
     return ss;
 }
 
-bool CZIchStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
+bool CZIcaStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 {
     CBlockIndex* pindexCheckpoint = GetIndexFrom();
     if (!pindexCheckpoint)
@@ -120,25 +120,25 @@ bool CZIchStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
     return true;
 }
 
-bool CZIchStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
+bool CZIcaStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
 {
-    //Create an output returning the zICH that was staked
+    //Create an output returning the zICA that was staked
     CTxOut outReward;
     libzerocoin::CoinDenomination denomStaked = libzerocoin::AmountToZerocoinDenomination(this->GetValue());
     CDeterministicMint dMint;
-    if (!pwallet->CreateZICHOutPut(denomStaked, outReward, dMint))
-        return error("%s: failed to create zICH output", __func__);
+    if (!pwallet->CreateZICAOutPut(denomStaked, outReward, dMint))
+        return error("%s: failed to create zICA output", __func__);
     vout.emplace_back(outReward);
 
     //Add new staked denom to our wallet
     if (!pwallet->DatabaseMint(dMint))
-        return error("%s: failed to database the staked zICH", __func__);
+        return error("%s: failed to database the staked zICA", __func__);
 
     for (unsigned int i = 0; i < 3; i++) {
         CTxOut out;
         CDeterministicMint dMintReward;
-        if (!pwallet->CreateZICHOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
-            return error("%s: failed to create zICH output", __func__);
+        if (!pwallet->CreateZICAOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
+            return error("%s: failed to create zICA output", __func__);
         vout.emplace_back(out);
 
         if (!pwallet->DatabaseMint(dMintReward))
@@ -148,23 +148,23 @@ bool CZIchStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nT
     return true;
 }
 
-bool CZIchStake::GetTxFrom(CTransaction& tx)
+bool CZIcaStake::GetTxFrom(CTransaction& tx)
 {
     return false;
 }
 
-bool CZIchStake::MarkSpent(CWallet *pwallet, const uint256& txid)
+bool CZIcaStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
-    CzICHTracker* zichTracker = pwallet->zichTracker.get();
+    CzICATracker* zicaTracker = pwallet->zicaTracker.get();
     CMintMeta meta;
-    if (!zichTracker->GetMetaFromStakeHash(hashSerial, meta))
+    if (!zicaTracker->GetMetaFromStakeHash(hashSerial, meta))
         return error("%s: tracker does not have serialhash", __func__);
 
-    zichTracker->SetPubcoinUsed(meta.hashPubcoin, txid);
+    zicaTracker->SetPubcoinUsed(meta.hashPubcoin, txid);
     return true;
 }
 
-//!ICH Stake
+//!ICA Stake
 bool CIchStake::SetInput(CTransaction txPrev, unsigned int n)
 {
     this->txFrom = txPrev;
@@ -240,7 +240,7 @@ bool CIchStake::GetModifier(uint64_t& nStakeModifier)
 
 CDataStream CIchStake::GetUniqueness()
 {
-    //The unique identifier for a ICH stake is the outpoint
+    //The unique identifier for a ICA stake is the outpoint
     CDataStream ss(SER_NETWORK, 0);
     ss << nPosition << txFrom.GetHash();
     return ss;

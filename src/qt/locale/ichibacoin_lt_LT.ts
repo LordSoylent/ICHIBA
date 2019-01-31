@@ -176,16 +176,16 @@
         <translation>Patvirtinkite piniginės užšifravimą.</translation>
     </message>
     <message>
-        <source>IchibaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ICHs from being stolen by malware infecting your computer.</source>
-        <translation>Dabar IchibaCoin išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų ICH nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
+        <source>IchibaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ICAs from being stolen by malware infecting your computer.</source>
+        <translation>Dabar IchibaCoin išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų ICA nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ar tikrai norite užšifruoti savo piniginę?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICH&lt;/b&gt;!</source>
-        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO ICH&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICA&lt;/b&gt;!</source>
+        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO ICA&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Naršyti pavedimų istoriją</translation>
     </message>
     <message>
-        <source>Privacy Actions for zICH</source>
-        <translation>zICH Saugumo Veiksmai </translation>
+        <source>Privacy Actions for zICA</source>
+        <translation>zICA Saugumo Veiksmai </translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1651,8 +1651,8 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Adresas / Suma:</translation>
     </message>
     <message>
-        <source>Add destinations to send ICH to</source>
-        <translation>Pridėkite vietas, kurioms norite siųsti ICH</translation>
+        <source>Add destinations to send ICA to</source>
+        <translation>Pridėkite vietas, kurioms norite siųsti ICA</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1750,32 +1750,32 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Pasirinkite privatumo lygmenį.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 ICH</source>
-        <translation>Naudokite 2 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 ICH</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 ICA</source>
+        <translation>Naudokite 2 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 ICA</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 ICH</source>
-        <translation>Naudokite 8 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 ICH</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 ICA</source>
+        <translation>Naudokite 8 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 ICA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Naudokite 16 atskirų masternod'ų</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ICH to anonymize 10000 ICH</source>
-        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 ICH, kad anonimizuotų 10000 ICH</translation>
+        <source>This option is the quickest and will cost about ~0.025 ICA to anonymize 10000 ICA</source>
+        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 ICA, kad anonimizuotų 10000 ICA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ICH to anonymize 10000 ICH</source>
-        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 ICH, kad anonimizuotų 10000 ICH</translation>
+        <source>This option is moderately fast and will cost about 0.05 ICA to anonymize 10000 ICA</source>
+        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 ICA, kad anonimizuotų 10000 ICA</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tai yra lėčiausias ir saugiausias variantas. Maksimalus anonimiškumas kainuos.</translation>
     </message>
     <message>
-        <source>0.1 ICH per 10000 ICH you anonymize.</source>
-        <translation>0.1 ICH kas 1000 ICH kuriuos anonimizuosite.</translation>
+        <source>0.1 ICA per 10000 ICA you anonymize.</source>
+        <translation>0.1 ICA kas 1000 ICA kuriuos anonimizuosite.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1890,24 +1890,24 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Įrašyti prievadą naudojant &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of ICH units to zICH</source>
-        <translation>Įgalinti automatinį konvertavimą iš ICH į zICH</translation>
+        <source>Enable automatic minting of ICA units to zICA</source>
+        <translation>Įgalinti automatinį konvertavimą iš ICA į zICA</translation>
     </message>
     <message>
-        <source>Enable zICH Automint</source>
-        <translation>Įgalinti zICH Automatinį nukaldinima</translation>
+        <source>Enable zICA Automint</source>
+        <translation>Įgalinti zICA Automatinį nukaldinima</translation>
     </message>
     <message>
-        <source>Percentage of incoming ICH which get automatically converted to zICH via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentas gauto ICH, kuris automatiškai bus konvertuotas į zICH naudojant Zerocoin Protokolą (min: 10%)</translation>
+        <source>Percentage of incoming ICA which get automatically converted to zICA via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentas gauto ICA, kuris automatiškai bus konvertuotas į zICA naudojant Zerocoin Protokolą (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zICH</source>
-        <translation>Automatiškai sukurtų zICH procentas</translation>
+        <source>Percentage of autominted zICA</source>
+        <translation>Automatiškai sukurtų zICA procentas</translation>
     </message>
     <message>
-        <source>Preferred Automint zICH Denomination</source>
-        <translation>Pageidautinas zICH Automatinio Nukaldinimo Nominalas</translation>
+        <source>Preferred Automint zICA Denomination</source>
+        <translation>Pageidautinas zICA Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
         <source>Connect to the IchibaCoin network through a SOCKS5 proxy.</source>
@@ -2029,8 +2029,8 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Bendras balansas, įskaitant visas nepasiekiamas monetas.</translation>
     </message>
     <message>
-        <source>ICH Balance</source>
-        <translation>ICH Balansas</translation>
+        <source>ICA Balance</source>
+        <translation>ICA Balansas</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2057,14 +2057,14 @@ https://www.transifex.com/ichibacoin-project/ichibacoin-project-translations</tr
         <translation>Jūsų dabartinis IchibaCoin balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
     </message>
     <message>
-        <source>zICH Balance</source>
-        <translation>zICH Balansas</translation>
+        <source>zICA Balance</source>
+        <translation>zICA Balansas</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zICH are spendable.</source>
+These zICA are spendable.</source>
         <translation>Subrendę: daugiau nei 20 patvirtinimų ir daugiau nei 1 konvertacija to pačio nominalo, kai jis jau buvo konvertuotas.
-Šiuos zICH galima išleisti.</translation>
+Šiuos zICA galima išleisti.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2117,8 +2117,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prienamas išleidimui:</translation>
     </message>
     <message>
-        <source>Locked ICH or Masternode collaterals. These are excluded from zICH minting.</source>
-        <translation>Užrakinti ICH arba Masternode užstatai. Jie yra neįtraukti į zICH kalimą.</translation>
+        <source>Locked ICA or Masternode collaterals. These are excluded from zICA minting.</source>
+        <translation>Užrakinti ICA arba Masternode užstatai. Jie yra neįtraukti į zICA kalimą.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2222,8 +2222,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>0</translation>
     </message>
     <message>
-        <source>zICH</source>
-        <translation>zICH</translation>
+        <source>zICA</source>
+        <translation>zICA</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2234,8 +2234,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prieinama Konvertavimui:</translation>
     </message>
     <message>
-        <source>0.000 000 00 ICH</source>
-        <translation>0.000 000 00 ICH</translation>
+        <source>0.000 000 00 ICA</source>
+        <translation>0.000 000 00 ICA</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -2266,12 +2266,12 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>PRIVATUMAS</translation>
     </message>
     <message>
-        <source>zICH Control</source>
-        <translation>zIch Kontrolė</translation>
+        <source>zICA Control</source>
+        <translation>zIca Kontrolė</translation>
     </message>
     <message>
-        <source>zICH Selected:</source>
-        <translation>Pasirinkta zICH:</translation>
+        <source>zICA Selected:</source>
+        <translation>Pasirinkta zICA:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2290,8 +2290,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prieinamas Balansas: </translation>
     </message>
     <message>
-        <source>0 zICH</source>
-        <translation>0 zICH</translation>
+        <source>0 zICA</source>
+        <translation>0 zICA</translation>
     </message>
     <message>
         <source>Security Level:</source>
@@ -2338,8 +2338,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Zerocoin Statistika:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zICH</source>
-        <translation>Bendras balansas, įskaitant nepatvirtintą ir nesubrendusį zICH</translation>
+        <source>Total Balance including unconfirmed and immature zICA</source>
+        <translation>Bendras balansas, įskaitant nepatvirtintą ir nesubrendusį zICA</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2516,12 +2516,12 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Kopijuoti sumą</translation>
     </message>
     <message>
-        <source>zICH Spend #: </source>
-        <translation>zICH Išleidimas #:</translation>
+        <source>zICA Spend #: </source>
+        <translation>zICA Išleidimas #:</translation>
     </message>
     <message>
-        <source>zICH Mint</source>
-        <translation>zICH Konvertavimas</translation>
+        <source>zICA Mint</source>
+        <translation>zICA Konvertavimas</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2628,8 +2628,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>su Saugumo Lygmeniu</translation>
     </message>
     <message>
-        <source>Failed to spend zICH</source>
-        <translation>Nepavyko išleisti zICH</translation>
+        <source>Failed to spend zICA</source>
+        <translation>Nepavyko išleisti zICA</translation>
     </message>
     <message>
         <source>serial: </source>
@@ -3001,8 +3001,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Pasirinktinio pakeitimo adresas</translation>
     </message>
     <message>
-        <source>0 ICH</source>
-        <translation>0 ICH</translation>
+        <source>0 ICA</source>
+        <translation>0 ICA</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3449,14 +3449,14 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
     </message>
     </context>
 <context>
-    <name>ZIchControlDialog</name>
+    <name>ZIcaControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zICH</source>
-        <translation>zICH</translation>
+        <source>zICA</source>
+        <translation>zICA</translation>
     </message>
     </context>
 <context>

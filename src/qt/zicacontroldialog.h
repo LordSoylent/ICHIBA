@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZICHCONTROLDIALOG_H
-#define ZICHCONTROLDIALOG_H
+#ifndef ZICACONTROLDIALOG_H
+#define ZICACONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -14,16 +14,16 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZIchControlDialog;
+class ZIcaControlDialog;
 }
 
-class ZIchControlDialog : public QDialog
+class ZIcaControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZIchControlDialog(QWidget *parent);
-    ~ZIchControlDialog();
+    explicit ZIcaControlDialog(QWidget *parent);
+    ~ZIcaControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -32,7 +32,7 @@ public:
     static std::vector<CMintMeta> GetSelectedMints();
 
 private:
-    Ui::ZIchControlDialog *ui;
+    Ui::ZIcaControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 
@@ -53,4 +53,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZICHCONTROLDIALOG_H
+#endif // ZICACONTROLDIALOG_H

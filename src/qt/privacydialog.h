@@ -46,7 +46,7 @@ public:
 
     void setModel(WalletModel* model);
     void showOutOfSyncWarning(bool fShow);
-    void setZIchControlLabels(int64_t nAmount, int nQuantity);
+    void setZIcaControlLabels(int64_t nAmount, int nQuantity);
 
 public slots:
     void setBalance(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance, 
@@ -77,7 +77,7 @@ private:
 
     int nDisplayUnit;
     bool updateLabel(const QString& address);
-    void sendzICH();
+    void sendzICA();
 
 private slots:
     void on_payTo_textChanged(const QString& address);
@@ -97,11 +97,11 @@ private slots:
 //    void coinControlClipboardLowOutput();
 //    void coinControlClipboardChange();
 
-    void on_pushButtonMintzICH_clicked();
+    void on_pushButtonMintzICA_clicked();
     void on_pushButtonMintReset_clicked();
     void on_pushButtonSpentReset_clicked();
-    void on_pushButtonSpendzICH_clicked();
-    void on_pushButtonZIchControl_clicked();
+    void on_pushButtonSpendzICA_clicked();
+    void on_pushButtonZIcaControl_clicked();
     void on_pushButtonHideDenoms_clicked();
     void on_pushButtonShowDenoms_clicked();
     void on_pasteButton_clicked();

@@ -58,12 +58,12 @@ QT_TRANSLATE_NOOP("ichibacoin-core", ""
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
 "Enable SwiftX, show confirmations for locked transactions (bool, default: %s)"),
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
-"Enable automatic wallet backups triggered after each zICH minting (0-1, "
+"Enable automatic wallet backups triggered after each zICA minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
-"Enable or disable staking functionality for ICH inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for ICA inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
-"Enable or disable staking functionality for zICH inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for zICA inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
 "Enable spork administration functionality with the appropriate private key."),
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
@@ -100,10 +100,10 @@ QT_TRANSLATE_NOOP("ichibacoin-core", ""
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
 "Failed to find coin set amongst held coins with less than maxNumber of Spends"),
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
-"Fees (in ICH/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in ICA/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
-"Fees (in ICH/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in ICA/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
@@ -171,7 +171,7 @@ QT_TRANSLATE_NOOP("ichibacoin-core", ""
 "Show N confirmations for a successfully locked transaction (0-9999, default: "
 "%u)"),
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
-"Specify custom backup path to add a copy of any automatic zICH backup. If "
+"Specify custom backup path to add a copy of any automatic zICA backup. If "
 "set as dir, every backup generates a timestamped file. If set as file, will "
 "rewrite to that file every backup. If backuppath is set as well, 4 backups "
 "will happen"),
@@ -197,10 +197,10 @@ QT_TRANSLATE_NOOP("ichibacoin-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 ICH."),
+"transaction that are not equal 10000 ICA."),
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"ICH."),
+"ICA."),
 QT_TRANSLATE_NOOP("ichibacoin-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -321,7 +321,7 @@ QT_TRANSLATE_NOOP("ichibacoin-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Failed to select a zerocoin"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Failed to wipe zerocoinDB"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Failed to write coin serial number into wallet"),
-QT_TRANSLATE_NOOP("ichibacoin-core", "Fee (in ICH/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("ichibacoin-core", "Fee (in ICA/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Finalizing transaction."),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Found enough users, signing ( waiting %s )"),
@@ -410,7 +410,7 @@ QT_TRANSLATE_NOOP("ichibacoin-core", "Randomly drop 1 of every <n> network messa
 QT_TRANSLATE_NOOP("ichibacoin-core", "Randomly fuzz 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Rebuild block chain index from current blk000??.dat files"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Receive and display P2P network alerts (default: %u)"),
-QT_TRANSLATE_NOOP("ichibacoin-core", "Reindex the ICH and zICH money supply statistics"),
+QT_TRANSLATE_NOOP("ichibacoin-core", "Reindex the ICA and zICA money supply statistics"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Reindex the accumulator database"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Reindexing zerocoin database..."),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Reindexing zerocoin failed"),
@@ -462,7 +462,7 @@ QT_TRANSLATE_NOOP("ichibacoin-core", "Synchronizing budgets..."),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Synchronizing masternode winners..."),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Synchronizing masternodes..."),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Synchronizing sporks..."),
-QT_TRANSLATE_NOOP("ichibacoin-core", "Syncing zICH wallet..."),
+QT_TRANSLATE_NOOP("ichibacoin-core", "Syncing zICA wallet..."),
 QT_TRANSLATE_NOOP("ichibacoin-core", "The coin spend has been used"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "The new spend coin transaction did not verify"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "The selected mint coin is an invalid coin"),
@@ -499,11 +499,11 @@ QT_TRANSLATE_NOOP("ichibacoin-core", "Use UPnP to map the listening port (defaul
 QT_TRANSLATE_NOOP("ichibacoin-core", "Use a custom max chain reorganization depth (default: %u)"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Use the test network"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Username for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("ichibacoin-core", "Value is below the smallest available denomination (= 1) of zICH"),
+QT_TRANSLATE_NOOP("ichibacoin-core", "Value is below the smallest available denomination (= 1) of zICA"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Value more than Obfuscation pool maximum allows."),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Verifying wallet..."),
-QT_TRANSLATE_NOOP("ichibacoin-core", "Version 1 zICH require a security level of 100 to successfully spend."),
+QT_TRANSLATE_NOOP("ichibacoin-core", "Version 1 zICA require a security level of 100 to successfully spend."),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Wallet %s resides outside data directory %s"),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Wallet is locked."),
 QT_TRANSLATE_NOOP("ichibacoin-core", "Wallet needed to be rewritten: restart IchibaCoin to complete"),

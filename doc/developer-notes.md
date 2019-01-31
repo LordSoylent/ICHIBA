@@ -118,7 +118,7 @@ to see it.
 
 **testnet mode**
 
-Run with the -testnet option to run with "play ICHs (tICH)" on the test network, if you
+Run with the -testnet option to run with "play ICAs (tICA)" on the test network, if you
 are testing multi-machine code that needs to operate across the internet.
 
 **DEBUG_LOCKORDER**

@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>IchibaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ICHs from being stolen by malware infecting your computer.</source>
-        <translation>IchibaCoin sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella ICHien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>IchibaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ICAs from being stolen by malware infecting your computer.</source>
+        <translation>IchibaCoin sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella ICAien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICH&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki ICHisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ICA&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki ICAisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1128,11 +1128,11 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 ICH</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 ICA</source>
         <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 IchibaCoin</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 ICH</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 ICA</source>
         <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 IchibaCoin</translation>
     </message>
     <message>
@@ -1140,11 +1140,11 @@ Please check the address and try again.</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ICH to anonymize 10000 ICH</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 ICH anonymoidaksesi 10000 IchibaCoin</translation>
+        <source>This option is the quickest and will cost about ~0.025 ICA to anonymize 10000 ICA</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 ICA anonymoidaksesi 10000 IchibaCoin</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ICH to anonymize 10000 ICH</source>
+        <source>This option is moderately fast and will cost about 0.05 ICA to anonymize 10000 ICA</source>
         <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 IchibaCoin anonymoidaksesi 10000 IchibaCoin</translation>
     </message>
     <message>
@@ -1152,7 +1152,7 @@ Please check the address and try again.</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 ICH per 10000 ICH you anonymize.</source>
+        <source>0.1 ICA per 10000 ICA you anonymize.</source>
         <translation>0.1 per 10000 IchibaCoin, jotka anonymisoit.</translation>
     </message>
     <message>
@@ -1887,8 +1887,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 ICH</source>
-        <translation>0 ICH</translation>
+        <source>0 ICA</source>
+        <translation>0 ICA</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -2511,7 +2511,7 @@ Please check the address and try again.</source>
     </message>
 </context>
 <context>
-    <name>ZIchControlDialog</name>
+    <name>ZIcaControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

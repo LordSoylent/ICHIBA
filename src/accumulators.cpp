@@ -10,7 +10,7 @@
 #include "init.h"
 #include "spork.h"
 #include "accumulatorcheckpoints.h"
-#include "zichchain.h"
+#include "zicachain.h"
 
 using namespace libzerocoin;
 
@@ -307,7 +307,7 @@ bool InvalidCheckpointRange(int nHeight)
 bool ValidateAccumulatorCheckpoint(const CBlock& block, CBlockIndex* pindex, AccumulatorMap& mapAccumulators)
 {
 	//V1 accumulators are completely phased out by the time this code hits the public and begins generating new checkpoints
-	//It is VERY IMPORTANT that when this is being run and height < v2_start, then zICH need to be disabled at the same time!!
+	//It is VERY IMPORTANT that when this is being run and height < v2_start, then zICA need to be disabled at the same time!!
 	if (pindex->nHeight < Params().Zerocoin_Block_V2_Start() || fVerifyingBlocks)
 		return true;
 
@@ -502,7 +502,7 @@ bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator
 
 		nMintsAdded += AddBlockMintsToAccumulator(coin, nHeightMintAdded, pindex, &witnessAccumulator, true);
 
-		/*// 10 blocks were accumulated twice when zICH v2 was activated
+		/*// 10 blocks were accumulated twice when zICA v2 was activated
 		if (pindex->nHeight == 1050010 && !fDoubleCounted) {
 		pindex = chainActive[1050000];
 		fDoubleCounted = true;

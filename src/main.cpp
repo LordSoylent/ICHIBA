@@ -33,7 +33,7 @@
 #include "util.h"
 #include "utilmoneystr.h"
 #include "validationinterface.h"
-#include "zichchain.h"
+#include "zicachain.h"
 
 #include "primitives/zerocoin.h"
 #include "libzerocoin/Denominations.h"
@@ -957,16 +957,16 @@ bool ContextualCheckZerocoinMint(const CTransaction& tx, const PublicCoin& coin,
 
 bool ContextualCheckZerocoinSpend(const CTransaction& tx, const CoinSpend& spend, CBlockIndex* pindex, const uint256& hashBlock)
 {
-	//Check to see if the zICH is properly signed
+	//Check to see if the zICA is properly signed
 	if (pindex->nHeight >= Params().Zerocoin_Block_V2_Start()) {
 		if (!spend.HasValidSignature())
-			return error("%s: V2 zICH spend does not have a valid signature", __func__);
+			return error("%s: V2 zICA spend does not have a valid signature", __func__);
 
 		libzerocoin::SpendType expectedType = libzerocoin::SpendType::SPEND;
 		if (tx.IsCoinStake())
 			expectedType = libzerocoin::SpendType::STAKE;
 		if (spend.getSpendType() != expectedType) {
-			return error("%s: trying to spend zICH without the correct spend type. txid=%s", __func__,
+			return error("%s: trying to spend zICA without the correct spend type. txid=%s", __func__,
 				tx.GetHash().GetHex());
 		}
 	}
@@ -974,14 +974,14 @@ bool ContextualCheckZerocoinSpend(const CTransaction& tx, const CoinSpend& spend
 	//Reject serial's that are already in the blockchain
 	int nHeightTx = 0;
 	if (IsSerialInBlockchain(spend.getCoinSerialNumber(), nHeightTx))
-		return error("%s : zICH spend with serial %s is already in block %d\n", __func__,
+		return error("%s : zICA spend with serial %s is already in block %d\n", __func__,
 			spend.getCoinSerialNumber().GetHex(), nHeightTx);
 
 	//Reject serial's that are not in the acceptable value range
 	bool fUseV1Params = spend.getVersion() < libzerocoin::PrivateCoin::PUBKEY_VERSION;
 	if (pindex->nHeight > Params().Zerocoin_Block_EnforceSerialRange() &&
 		!spend.HasValidSerial(Params().Zerocoin_Params(fUseV1Params)))
-		return error("%s : zICH spend with serial %s from tx %s is not in valid range\n", __func__,
+		return error("%s : zICA spend with serial %s from tx %s is not in valid range\n", __func__,
 			spend.getCoinSerialNumber().GetHex(), tx.GetHash().GetHex());
 
 	return true;
@@ -1291,7 +1291,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
 			//Check that txid is not already in the chain
 			int nHeightTx = 0;
 			if (IsTransactionInChain(tx.GetHash(), nHeightTx))
-				return state.Invalid(error("AcceptToMemoryPool : zICH spend tx %s already in block %d",
+				return state.Invalid(error("AcceptToMemoryPool : zICA spend tx %s already in block %d",
 					tx.GetHash().GetHex(), nHeightTx), REJECT_DUPLICATE, "bad-txns-inputs-spent");
 
 			//Check for double spending of serial #'s
@@ -1301,7 +1301,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
 				CoinSpend spend = TxInToZerocoinSpend(txIn);
 				if (!ContextualCheckZerocoinSpend(tx, spend, chainActive.Tip(), 0))
 					return state.Invalid(error("%s: ContextualCheckZerocoinSpend failed for tx %s", __func__,
-						tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zich");
+						tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zica");
 			}
 		}
 		else {
@@ -1330,7 +1330,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
 				}
 			}
 
-			// Check that zICH mints are not already known
+			// Check that zICA mints are not already known
 			if (tx.IsZerocoinMint()) {
 				for (auto& out : tx.vout) {
 					if (!out.IsZerocoinMint())
@@ -2032,7 +2032,7 @@ int64_t GetBlockValue(int nHeight)
 	return nSubsidy;
 }
 
-int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZICHStake)
+int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZICAStake)
 {
 	int64_t ret = 0;
 
@@ -2114,7 +2114,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 		ret = blockValue * 9 / 10;  //90%;
 	}
 	
-	if (isZICHStake)
+	if (isZICAStake)
 		ret = 1 * COIN;
 
 	return ret;
@@ -2639,7 +2639,7 @@ void ThreadScriptCheck()
 	scriptcheckqueue.Thread();
 }
 
-void RecalculateZICHMinted()
+void RecalculateZICAMinted()
 {
 	CBlockIndex *pindex = chainActive[Params().Zerocoin_StartHeight()];
 	int nHeightEnd = chainActive.Height();
@@ -2666,14 +2666,14 @@ void RecalculateZICHMinted()
 	}
 }
 
-void RecalculateZICHSpent()
+void RecalculateZICASpent()
 {
 	CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
 	while (true) {
 		if (pindex->nHeight % 1000 == 0)
 			LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
 
-		//Rewrite zICH supply
+		//Rewrite zICA supply
 		CBlock block;
 		assert(ReadBlockFromDisk(block, pindex));
 
@@ -2682,13 +2682,13 @@ void RecalculateZICHSpent()
 		//Reset the supply to previous block
 		pindex->mapZerocoinSupply = pindex->pprev->mapZerocoinSupply;
 
-		//Add mints to zICH supply
+		//Add mints to zICA supply
 		for (auto denom : libzerocoin::zerocoinDenomList) {
 			long nDenomAdded = count(pindex->vMintDenominationsInBlock.begin(), pindex->vMintDenominationsInBlock.end(), denom);
 			pindex->mapZerocoinSupply.at(denom) += nDenomAdded;
 		}
 
-		//Remove spends from zICH supply
+		//Remove spends from zICA supply
 		for (auto denom : listDenomsSpent)
 			pindex->mapZerocoinSupply.at(denom)--;
 
@@ -2702,7 +2702,7 @@ void RecalculateZICHSpent()
 	}
 }
 
-bool RecalculateICHSupply(int nHeightStart)
+bool RecalculateICASupply(int nHeightStart)
 {
 	if (nHeightStart > chainActive.Height())
 		return false;
@@ -2822,7 +2822,7 @@ bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError
 	return true;
 }
 
-bool UpdateZICHSupply(const CBlock& block, CBlockIndex* pindex)
+bool UpdateZICASupply(const CBlock& block, CBlockIndex* pindex)
 {
 	std::list<CZerocoinMint> listMints;
 	bool fFilterInvalid = pindex->nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
@@ -3001,7 +3001,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 					return state.DoS(100, error("%s: failed to add block %s with invalid zerocoinspend", __func__, tx.GetHash().GetHex()), REJECT_INVALID);
 			}
 
-			// Check that zICH mints are not already known
+			// Check that zICA mints are not already known
 			if (tx.IsZerocoinMint()) {
 				for (auto& out : tx.vout) {
 					if (!out.IsZerocoinMint())
@@ -3031,7 +3031,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 				}
 			}
 
-			// Check that zICH mints are not already known
+			// Check that zICA mints are not already known
 			if (tx.IsZerocoinMint()) {
 				for (auto& out : tx.vout) {
 					if (!out.IsZerocoinMint())
@@ -3079,14 +3079,14 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
 	//A one-time event where money supply counts were off and recalculated on a certain block.
 	if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
-		RecalculateZICHMinted();
-		RecalculateZICHSpent();
-		RecalculateICHSupply(Params().Zerocoin_StartHeight());
+		RecalculateZICAMinted();
+		RecalculateZICASpent();
+		RecalculateICASupply(Params().Zerocoin_StartHeight());
 	}
 
-	//Track zICH money supply in the block index
-	if (!UpdateZICHSupply(block, pindex))
-		return state.DoS(100, error("%s: Failed to calculate new zICH supply for block=%s height=%d", __func__,
+	//Track zICA money supply in the block index
+	if (!UpdateZICASupply(block, pindex))
+		return state.DoS(100, error("%s: Failed to calculate new zICA supply for block=%s height=%d", __func__,
 			block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
 
 	// track money supply and mint amount info
@@ -3094,7 +3094,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 	pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
 	pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
 
-	//    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s zIchSpent: %s\n",
+	//    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s zIcaSpent: %s\n",
 	//              FormatMoney(nValueOut), FormatMoney(nValueIn),
 	//              FormatMoney(nFees), FormatMoney(pindex->nMint), FormatMoney(nAmountZerocoinSpent));
 
@@ -3148,7 +3148,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 		setDirtyBlockIndex.insert(pindex);
 	}
 
-	//Record zICH serials
+	//Record zICA serials
 	set<uint256> setAddedTx;
 	for (pair<CoinSpend, uint256> pSpend : vSpends) {
 		// Send signal to wallet if this is ours
@@ -3290,7 +3290,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
 {
 	chainActive.SetTip(pindexNew);
 
-	// If turned on AutoZeromint will automatically convert ICH to zICH
+	// If turned on AutoZeromint will automatically convert ICA to zICA
 	if (pwalletMain->isZeromintEnabled())
 		pwalletMain->AutoZeromint();
 
@@ -4166,13 +4166,13 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
 		if (!CheckTransaction(tx, fZerocoinActive, chainActive.Height() + 1 >= Params().Zerocoin_Block_EnforceSerialRange(), state))
 			return error("CheckBlock() : CheckTransaction failed");
 
-		// double check that there are no double spent zICH spends in this block
+		// double check that there are no double spent zICA spends in this block
 		if (tx.IsZerocoinSpend()) {
 			for (const CTxIn& txIn : tx.vin) {
 				if (txIn.scriptSig.IsZerocoinSpend()) {
 					libzerocoin::CoinSpend spend = TxInToZerocoinSpend(txIn);
 					if (count(vBlockSerials.begin(), vBlockSerials.end(), spend.getCoinSerialNumber()))
-						return state.DoS(100, error("%s : Double spending of zICH serial %s in block\n Block: %s",
+						return state.DoS(100, error("%s : Double spending of zICA serial %s in block\n Block: %s",
 							__func__, spend.getCoinSerialNumber().GetHex(), block.ToString()));
 					vBlockSerials.emplace_back(spend.getCoinSerialNumber());
 				}
@@ -4379,21 +4379,21 @@ bool AcceptBlockHeader(const CBlock& block, CValidationState& state, CBlockIndex
 bool ContextualCheckZerocoinStake(int nHeight, CStakeInput* stake)
 {
 	if (nHeight < Params().Zerocoin_Block_V2_Start())
-		return error("%s: zICH stake block is less than allowed start height", __func__);
+		return error("%s: zICA stake block is less than allowed start height", __func__);
 
-	if (CZIchStake* zICH = dynamic_cast<CZIchStake*>(stake)) {
-		CBlockIndex* pindexFrom = zICH->GetIndexFrom();
+	if (CZIcaStake* zICA = dynamic_cast<CZIcaStake*>(stake)) {
+		CBlockIndex* pindexFrom = zICA->GetIndexFrom();
 		if (!pindexFrom)
-			return error("%s: failed to get index associated with zICH stake checksum", __func__);
+			return error("%s: failed to get index associated with zICA stake checksum", __func__);
 
 		if (chainActive.Height() - pindexFrom->nHeight < Params().Zerocoin_RequiredStakeDepth())
-			return error("%s: zICH stake does not have required confirmation depth", __func__);
+			return error("%s: zICA stake does not have required confirmation depth", __func__);
 
 		//The checksum needs to be the exact checksum from 200 blocks ago
 		uint256 nCheckpoint200 = chainActive[nHeight - Params().Zerocoin_RequiredStakeDepth()]->nAccumulatorCheckpoint;
-		uint32_t nChecksum200 = ParseChecksum(nCheckpoint200, libzerocoin::AmountToZerocoinDenomination(zICH->GetValue()));
-		if (nChecksum200 != zICH->GetChecksum())
-			return error("%s: accumulator checksum is different than the block 200 blocks previous. stake=%d block200=%d", __func__, zICH->GetChecksum(), nChecksum200);
+		uint32_t nChecksum200 = ParseChecksum(nCheckpoint200, libzerocoin::AmountToZerocoinDenomination(zICA->GetValue()));
+		if (nChecksum200 != zICA->GetChecksum())
+			return error("%s: accumulator checksum is different than the block 200 blocks previous. stake=%d block200=%d", __func__, zICA->GetChecksum(), nChecksum200);
 	}
 	else {
 		return error("%s: dynamic_cast of stake ptr failed", __func__);
@@ -4444,8 +4444,8 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
 		if (!stake)
 			return error("%s: null stake ptr", __func__);
 
-		if (stake->IsZICH() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
-			return state.DoS(100, error("%s: staked zICH fails context checks", __func__));
+		if (stake->IsZICA() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
+			return state.DoS(100, error("%s: staked zICA fails context checks", __func__));
 
 		uint256 hash = block.GetHash();
 		if (!mapProofOfStake.count(hash)) // add to mapProofOfStake
@@ -4575,7 +4575,7 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
 		}
 	}
 	if (nMints || nSpends)
-		LogPrintf("%s : block contains %d zICH mints and %d zICH spends\n", __func__, nMints, nSpends);
+		LogPrintf("%s : block contains %d zICA mints and %d zICA spends\n", __func__, nMints, nSpends);
 
 	if (!CheckBlockSignature(*pblock))
 		return error("ProcessNewBlock() : bad proof-of-stake block signature");

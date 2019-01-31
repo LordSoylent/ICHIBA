@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zichcontroldialog.h"
-#include "ui_zichcontroldialog.h"
+#include "zicacontroldialog.h"
+#include "ui_zicacontroldialog.h"
 
 #include "accumulators.h"
 #include "main.h"
@@ -12,12 +12,12 @@
 using namespace std;
 using namespace libzerocoin;
 
-std::set<std::string> ZIchControlDialog::setSelectedMints;
-std::set<CMintMeta> ZIchControlDialog::setMints;
+std::set<std::string> ZIcaControlDialog::setSelectedMints;
+std::set<CMintMeta> ZIcaControlDialog::setMints;
 
-ZIchControlDialog::ZIchControlDialog(QWidget *parent) :
+ZIcaControlDialog::ZIcaControlDialog(QWidget *parent) :
     QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint),
-    ui(new Ui::ZIchControlDialog),
+    ui(new Ui::ZIcaControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -31,19 +31,19 @@ ZIchControlDialog::ZIchControlDialog(QWidget *parent) :
     connect(ui->pushButtonAll, SIGNAL(clicked()), this, SLOT(ButtonAllClicked()));
 }
 
-ZIchControlDialog::~ZIchControlDialog()
+ZIcaControlDialog::~ZIcaControlDialog()
 {
     delete ui;
 }
 
-void ZIchControlDialog::setModel(WalletModel *model)
+void ZIcaControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
 }
 
 //Update the tree widget
-void ZIchControlDialog::updateList()
+void ZIcaControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -128,7 +128,7 @@ void ZIchControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void ZIchControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZIcaControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -150,7 +150,7 @@ void ZIchControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void ZIchControlDialog::updateLabels()
+void ZIcaControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CMintMeta& mint : setMints) {
@@ -159,14 +159,14 @@ void ZIchControlDialog::updateLabels()
     }
 
     //update this dialog's labels
-    ui->labelZIch_int->setText(QString::number(nAmount));
+    ui->labelZIca_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(setSelectedMints.size()));
 
     //update PrivacyDialog labels
-    privacyDialog->setZIchControlLabels(nAmount, setSelectedMints.size());
+    privacyDialog->setZIcaControlLabels(nAmount, setSelectedMints.size());
 }
 
-std::vector<CMintMeta> ZIchControlDialog::GetSelectedMints()
+std::vector<CMintMeta> ZIcaControlDialog::GetSelectedMints()
 {
     std::vector<CMintMeta> listReturn;
     for (const CMintMeta& mint : setMints) {
@@ -178,7 +178,7 @@ std::vector<CMintMeta> ZIchControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void ZIchControlDialog::ButtonAllClicked()
+void ZIcaControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;

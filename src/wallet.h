@@ -23,8 +23,8 @@
 #include "validationinterface.h"
 #include "wallet_ismine.h"
 #include "walletdb.h"
-#include "zichwallet.h"
-#include "zichtracker.h"
+#include "zicawallet.h"
+#include "zicatracker.h"
 
 #include <algorithm>
 #include <map>
@@ -84,30 +84,30 @@ enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NOT10000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 ICH at the same time
+    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 ICA at the same time
     ONLY_10000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
-// Possible states for zICH send
+// Possible states for zICA send
 enum ZerocoinSpendStatus {
-    ZICH_SPEND_OKAY = 0,                            // No error
-    ZICH_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZICH_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZICH_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZICH_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZICH_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZICH_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZICH_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZICH_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZICH_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZICH_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZICH_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZICH_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZICH_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZICH_SPENT_USED_ZICH = 14,                      // Coin has already been spend
-    ZICH_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
-    ZICH_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
+    ZICA_SPEND_OKAY = 0,                            // No error
+    ZICA_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZICA_WALLET_LOCKED = 2,                         // Wallet was locked
+    ZICA_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    ZICA_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    ZICA_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    ZICA_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    ZICA_TRX_CREATE = 7,                            // Everything related to create the transaction
+    ZICA_TRX_CHANGE = 8,                            // Everything related to transaction change
+    ZICA_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    ZICA_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    ZICA_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    ZICA_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    ZICA_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    ZICA_SPENT_USED_ZICA = 14,                      // Coin has already been spend
+    ZICA_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
+    ZICA_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
 };
 
 struct CompactTallyItem {
@@ -213,15 +213,15 @@ public:
     std::string ResetMintZerocoin();
     std::string ResetSpentZerocoin();
     void ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored, std::list<CDeterministicMint>& listDMintsRestored);
-    void ZIchBackupWallet();
+    void ZIcaBackupWallet();
     bool GetZerocoinKey(const CBigNum& bnSerial, CKey& key);
-    bool CreateZICHOutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
+    bool CreateZICAOutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
     bool GetMint(const uint256& hashSerial, CZerocoinMint& mint);
     bool GetMintFromStakeHash(const uint256& hashStake, CZerocoinMint& mint);
     bool DatabaseMint(CDeterministicMint& dMint);
     bool SetMintUnspent(const CBigNum& bnSerial);
     bool UpdateMint(const CBigNum& bnValue, const int& nHeight, const uint256& txid, const libzerocoin::CoinDenomination& denom);
-    string GetUniqueWalletBackupName(bool fzichAuto) const;
+    string GetUniqueWalletBackupName(bool fzicaAuto) const;
 
 
     /** Zerocin entry changed.
@@ -237,13 +237,13 @@ public:
      */
     mutable CCriticalSection cs_wallet;
 
-    CzICHWallet* zwalletMain;
+    CzICAWallet* zwalletMain;
 
     bool fFileBacked;
     bool fWalletUnlockAnonymizeOnly;
     std::string strWalletFile;
     bool fBackupMints;
-    std::unique_ptr<CzICHTracker> zichTracker;
+    std::unique_ptr<CzICATracker> zicaTracker;
 
     std::set<int64_t> setKeyPool;
     std::map<CKeyID, CKeyMetadata> mapKeyMetadata;
@@ -328,20 +328,20 @@ public:
         return nZeromintPercentage;
     }
 
-    void setZWallet(CzICHWallet* zwallet)
+    void setZWallet(CzICAWallet* zwallet)
     {
         zwalletMain = zwallet;
-        zichTracker = std::unique_ptr<CzICHTracker>(new CzICHTracker(strWalletFile));
+        zicaTracker = std::unique_ptr<CzICATracker>(new CzICATracker(strWalletFile));
     }
 
-    CzICHWallet* getZWallet() { return zwalletMain; }
+    CzICAWallet* getZWallet() { return zwalletMain; }
 
     bool isZeromintEnabled()
     {
         return fEnableZeromint;
     }
 
-    void setZIchAutoBackups(bool fEnabled)
+    void setZIcaAutoBackups(bool fEnabled)
     {
         fBackupMints = fEnabled;
     }
@@ -669,8 +669,8 @@ public:
     /** MultiSig address added */
     boost::signals2::signal<void(bool fHaveMultiSig)> NotifyMultiSigChanged;
 
-    /** zICH reset */
-    boost::signals2::signal<void()> NotifyzICHReset;
+    /** zICA reset */
+    boost::signals2::signal<void()> NotifyzICAReset;
 
     /** notify wallet file backed up */
     boost::signals2::signal<void (const bool& fSuccess, const std::string& filename)> NotifyWalletBacked;

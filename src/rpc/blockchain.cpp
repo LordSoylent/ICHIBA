@@ -118,12 +118,12 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
 
     result.push_back(Pair("moneysupply",ValueFromAmount(blockindex->nMoneySupply)));
 
-    UniValue zichObj(UniValue::VOBJ);
+    UniValue zicaObj(UniValue::VOBJ);
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        zichObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
+        zicaObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
-    zichObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
-    result.push_back(Pair("zICHsupply", zichObj));
+    zicaObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
+    result.push_back(Pair("zICAsupply", zicaObj));
 
     return result;
 }
@@ -323,17 +323,17 @@ UniValue getblock(const UniValue& params, bool fHelp)
             "  \"previousblockhash\" : \"hash\",  (string) The hash of the previous block\n"
             "  \"nextblockhash\" : \"hash\"       (string) The hash of the next block\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zICHsupply\" :\n"
+            "  \"zICAsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zICH denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zICH denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zICH denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zICH denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zICH denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zICH denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zICH denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zICH denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zICH denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zICA denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zICA denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zICA denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zICA denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zICA denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zICA denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zICA denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zICA denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zICA denominations\n"
             "  }\n"
             "}\n"
 

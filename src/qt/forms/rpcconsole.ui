@@ -1326,9 +1326,9 @@
         </widget>
        </item>
        <item row="4" column="0">
-        <widget class="QLabel" name="wallet_customzichbackuppath_label">
+        <widget class="QLabel" name="wallet_customzicabackuppath_label">
          <property name="text">
-          <string>Custom zICH Backup Path:</string>
+          <string>Custom zICA Backup Path:</string>
          </property>
          <property name="visible">
           <bool>false</bool>
@@ -1336,7 +1336,7 @@
         </widget>
        </item>
        <item row="4" column="1" colspan="3">
-        <widget class="QLabel" name="wallet_customzichbackuppath">
+        <widget class="QLabel" name="wallet_customzicabackuppath">
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>

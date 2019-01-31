@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef IchibaCoin_ZICHCHAIN_H
-#define IchibaCoin_ZICHCHAIN_H
+#ifndef IchibaCoin_ZICACHAIN_H
+#define IchibaCoin_ZICACHAIN_H
 
 #include "libzerocoin/Coin.h"
 #include "libzerocoin/Denominations.h"
@@ -39,4 +39,4 @@ bool TxOutToPublicCoin(const CTxOut& txout, libzerocoin::PublicCoin& pubCoin, CV
 std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock& block, bool fFilterInvalid);
 
 
-#endif //IchibaCoin_ZICHCHAIN_H
+#endif //IchibaCoin_ZICACHAIN_H
